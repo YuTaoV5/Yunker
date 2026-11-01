@@ -1,0 +1,35 @@
+{
+  "v8actor": {
+    "weighted_reward_rate_sum": 3.689053019252892,
+    "unloads": [
+      0.0,
+      0.0
+    ],
+    "xy_rmse": 0.0989721491932869,
+    "geometry_alignment": null,
+    "mesh_clearance": null
+  },
+  "v9actor": {
+    "weighted_reward_rate_sum": 3.6254187667986173,
+    "unloads": [
+      0.0,
+      0.0
+    ],
+    "xy_rmse": 0.09907196462154388,
+    "geometry_alignment": null,
+    "mesh_clearance": null
+  },
+  "dagger_actor": {
+    "weighted_reward_rate_sum": 4.397991267032921,
+    "unloads": [
+      47.0,
+      47.0
+    ],
+    "xy_rmse": 0.13802962005138397,
+    "geometry_alignment": null,
+    "mesh_clearance": [
+      0.006816457957029343,
+      0.0062708780169487
+    ]
+  }
+}

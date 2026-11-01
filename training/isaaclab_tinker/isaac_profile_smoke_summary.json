@@ -1,0 +1,18 @@
+{
+  "checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v8/2026-11-01_15-51-40_forward_rehearsal_seed48/model_100.pt",
+  "scope": "independent fault evaluator implementation smoke, not gait acceptance",
+  "runs": {
+    "nominal": {
+      "exit_code": 0
+    },
+    "zero": {
+      "exit_code": 0
+    },
+    "delay20": {
+      "exit_code": 0
+    }
+  },
+  "zero_profile_xy_rmse_max_difference": 0.0,
+  "zero_profile_parity_pass": true,
+  "delay_injection_pass": true
+}

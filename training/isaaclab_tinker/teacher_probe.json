@@ -1,0 +1,74 @@
+[
+  {
+    "postprocessing_enabled": true,
+    "vx": 0.0,
+    "fell": false,
+    "seconds": 9.999999999999897,
+    "liftoffs": [
+      1,
+      1
+    ],
+    "vx_rmse": 0.0023950368658286867,
+    "final_step_decay": 1.0
+  },
+  {
+    "postprocessing_enabled": true,
+    "vx": 0.1,
+    "fell": false,
+    "seconds": 9.999999999999897,
+    "liftoffs": [
+      28,
+      28
+    ],
+    "vx_rmse": 0.044331600846556234,
+    "final_step_decay": 1.0
+  },
+  {
+    "postprocessing_enabled": true,
+    "vx": 0.25,
+    "fell": false,
+    "seconds": 9.999999999999897,
+    "liftoffs": [
+      23,
+      23
+    ],
+    "vx_rmse": 0.057329004937805815,
+    "final_step_decay": 1.0
+  },
+  {
+    "postprocessing_enabled": false,
+    "vx": 0.0,
+    "fell": false,
+    "seconds": 9.999999999999897,
+    "liftoffs": [
+      1,
+      1
+    ],
+    "vx_rmse": 0.0006435352036828328,
+    "final_step_decay": 1.0
+  },
+  {
+    "postprocessing_enabled": false,
+    "vx": 0.1,
+    "fell": false,
+    "seconds": 9.999999999999897,
+    "liftoffs": [
+      30,
+      29
+    ],
+    "vx_rmse": 0.041486633749176,
+    "final_step_decay": 1.0
+  },
+  {
+    "postprocessing_enabled": false,
+    "vx": 0.25,
+    "fell": false,
+    "seconds": 9.999999999999897,
+    "liftoffs": [
+      26,
+      25
+    ],
+    "vx_rmse": 0.04486823456698066,
+    "final_step_decay": 1.0
+  }
+]

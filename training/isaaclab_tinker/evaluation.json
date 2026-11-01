@@ -1,0 +1,93 @@
+{
+  "checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_flat_baseline/2026-11-01_11-20-40_baseline_seed42/model_2999.pt",
+  "seed": 123,
+  "seconds": 20,
+  "warmup_seconds": 2,
+  "robots_per_case": 12,
+  "cases": {
+    "stand": {
+      "command": [
+        0,
+        0,
+        0
+      ],
+      "xy_rmse": 0.005055293440818787,
+      "yaw_rmse": 0.01878151297569275,
+      "episode_ends_in_measurement": 12,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.31355607509613037,
+      "mean_gravity_xy_norm": 0.020069653168320656
+    },
+    "forward_010": {
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "xy_rmse": 0.10335937142372131,
+      "yaw_rmse": 0.017445381730794907,
+      "episode_ends_in_measurement": 12,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.314531534910202,
+      "mean_gravity_xy_norm": 0.02189509943127632
+    },
+    "forward_025": {
+      "command": [
+        0.25,
+        0,
+        0
+      ],
+      "xy_rmse": 0.25309860706329346,
+      "yaw_rmse": 0.006875684019178152,
+      "episode_ends_in_measurement": 12,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.31607699394226074,
+      "mean_gravity_xy_norm": 0.02612791396677494
+    },
+    "backward": {
+      "command": [
+        -0.1,
+        0,
+        0
+      ],
+      "xy_rmse": 0.09701470285654068,
+      "yaw_rmse": 0.01567744091153145,
+      "episode_ends_in_measurement": 12,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.3127864599227905,
+      "mean_gravity_xy_norm": 0.020765919238328934
+    },
+    "turn_left": {
+      "command": [
+        0,
+        0,
+        0.3
+      ],
+      "xy_rmse": 0.03264622390270233,
+      "yaw_rmse": 0.3922312259674072,
+      "episode_ends_in_measurement": 12,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.31639257073402405,
+      "mean_gravity_xy_norm": 0.03678181767463684
+    },
+    "turn_right": {
+      "command": [
+        0,
+        0,
+        -0.3
+      ],
+      "xy_rmse": 0.0226580873131752,
+      "yaw_rmse": 0.32237476110458374,
+      "episode_ends_in_measurement": 12,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.3066875636577606,
+      "mean_gravity_xy_norm": 0.08965790271759033
+    }
+  }
+}

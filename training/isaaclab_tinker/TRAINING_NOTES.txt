@@ -1,0 +1,11 @@
+Tinker Isaac Lab baseline, 2026-11-01
+Upstream Tinker: 075e79c91cce3360431c7f8db1f7aaa584a97244
+Original train.py selects Tinker trot config: Isaac Gym, NP3O, ActorCriticMixedBarlowTwins, 1024 environments, 24 rollout steps, learning rate 1e-4, gamma .98, 30000 iterations. Existing finall.onnx provenance is unknown; this does not recover its training recipe.
+New baseline: installed Isaac Lab release 2.3.2 (Python package isaaclab 0.54.2), RSL-RL 3.1.2, Isaac Sim 5.1, torch 2.7.0+cu128.
+References:
+https://github.com/isaac-sim/IsaacLab : reused installed H1 flat velocity task and RSL-RL runner, adapted to Tinker joints and scale.
+https://github.com/roboterax/humanoid-gym/blob/main/humanoid/envs/custom/humanoid_config.py : reviewed stacked proprioception, foot slip/contact and randomization approach; no robot-scale gains copied.
+https://github.com/apirrone/Open_Duck_Playground : reviewed reference-motion/imitative gait route; not yet integrated.
+Physical check: 8 robots, zero actions, 5 seconds, no base-contact terminations, mean base height .289-.328m. 32-env, 2-iteration PPO smoke passed.
+This is a baseline experiment, not evidence of good locomotion. Pending: deterministic policy evaluation, low-speed command tracking, zero-command hold, turning, perturbation/mass/friction/delay tests, rendered inspection, MuJoCo transfer and matching Jetson adapter.
+Robot auto-control remains disabled from prior diagnostics; no hardware changes performed by training setup.

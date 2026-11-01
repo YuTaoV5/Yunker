@@ -1,0 +1,16 @@
+{
+  "scope": "Isaac fixed physical parameter write/readback only, not gait robustness acceptance",
+  "mass_ratio_085": true,
+  "gain_ratio_08": true,
+  "com_offset_xy": [
+    0.02,
+    -0.02
+  ],
+  "robot_static_dynamic_friction_03": true,
+  "actual_total_mass_kg": 7.154881477355957,
+  "actual_base_com_local": [
+    0.019999999552965164,
+    -0.019999999552965164,
+    0.035999998450279236
+  ]
+}

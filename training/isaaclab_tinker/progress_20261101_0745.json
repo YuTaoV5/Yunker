@@ -1,0 +1,27 @@
+{
+  "training": {
+    "task": "Tinker-Robust-v7",
+    "iteration": 275,
+    "total_iterations": 3000,
+    "checked_at": "2026-11-01T07:45:23.496239+00:00",
+    "reward": 86.38,
+    "episode_length": 1000.0,
+    "xy_error": 0.1649,
+    "yaw_error": 0.3935,
+    "base_contact": 0.002,
+    "single_support_reward": 0.285,
+    "delta_from_saved_state": 275,
+    "eta": "02:24:09"
+  },
+  "acceptance_status": "NOT_PASSED",
+  "pending_isaac_result": "v7_nominal200.json",
+  "implemented_this_cycle": [
+    "deterministic packet fault injection with 1ms command delivery",
+    "7-case communication subset with measured packet statistics",
+    "fixed initial command history and command reset in Isaac evaluator",
+    "v7 ONNX numerical parity and SHA256 manifest",
+    "MuJoCo reproducible fault CLI"
+  ],
+  "diagnosis": "PPO gait regression at model200: slow forward no liftoffs, backward fall; training reward not sufficient",
+  "full_matrix_complete": false
+}

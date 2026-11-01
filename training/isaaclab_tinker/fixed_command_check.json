@@ -1,0 +1,2665 @@
+{
+  "checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v10/2026-11-01_16-51-54_dagger_init_control_seed49/model_100.pt",
+  "seed": 123,
+  "seconds": 12.0,
+  "warmup_seconds": 1.0,
+  "robots_per_case": 1,
+  "cases": {
+    "stand": {
+      "command": [
+        0,
+        0,
+        0
+      ],
+      "xy_rmse": 0.016115382313728333,
+      "yaw_rmse": 0.03735430911183357,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.29471808671951294,
+      "mean_gravity_xy_norm": 0.020633313804864883,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 1.2711114883422852,
+      "max_drift_m": 0.038514718413352966,
+      "mean_liftoffs_per_foot": [
+        0.0,
+        0.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending",
+      "mean_weighted_reward_rate": {
+        "track_lin_vel_xy_exp": 4.802654266357422,
+        "track_ang_vel_z_exp": 2.934875249862671,
+        "ang_vel_xy_l2": -4.723793244920671e-05,
+        "dof_torques_l2": -0.0002301122440258041,
+        "dof_acc_l2": -0.00031044159550219774,
+        "action_rate_l2": -0.00011326095409458503,
+        "flat_orientation_l2": -0.0012802684213966131,
+        "dof_pos_limits": 0.0,
+        "termination_penalty": 0.0,
+        "feet_slide": -0.009520265273749828,
+        "joint_deviation_hip": -0.03053954429924488,
+        "yaw_error": -0.04350266233086586,
+        "progress": 0.0,
+        "velocity_error": -0.028033437207341194,
+        "alternating_landing": 0.0,
+        "lateral_velocity_error": -0.00695039052516222,
+        "target_tracking_error": -0.004540822468698025
+      },
+      "maximum_source_mesh_clearance_per_foot_m": [
+        -6.444752216339111e-07,
+        1.7248094081878662e-06
+      ],
+      "source_mesh_geometric_unload_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ],
+      "geometry_measurement_note": "URDF collision support vertices applied to Isaac link frame, >2mm AND force unloaded; runtime frame alignment pending",
+      "mean_velocity_body": [
+        0.0005622233147732913,
+        -0.0005796121549792588,
+        -0.0029700645245611668
+      ],
+      "unload_sequence_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ]
+    },
+    "forward_010": {
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "xy_rmse": 0.11877566576004028,
+      "yaw_rmse": 0.19915813207626343,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.3400000035762787,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.28312206268310547,
+      "mean_gravity_xy_norm": 0.04443497210741043,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 3.3585097789764404,
+      "max_drift_m": 1.1412205696105957,
+      "mean_liftoffs_per_foot": [
+        37.0,
+        37.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending",
+      "mean_weighted_reward_rate": {
+        "track_lin_vel_xy_exp": 1.6726809740066528,
+        "track_ang_vel_z_exp": 2.1871440410614014,
+        "ang_vel_xy_l2": -0.016079794615507126,
+        "dof_torques_l2": -0.0005626542260870337,
+        "dof_acc_l2": -0.019385064020752907,
+        "action_rate_l2": -0.00414690189063549,
+        "flat_orientation_l2": -0.006164359860122204,
+        "dof_pos_limits": 0.0,
+        "termination_penalty": 0.0,
+        "feet_slide": -0.07260296493768692,
+        "joint_deviation_hip": -0.01324436068534851,
+        "yaw_error": -0.20926886796951294,
+        "progress": 1.7892827987670898,
+        "velocity_error": -0.20768406987190247,
+        "alternating_landing": 0.22781817615032196,
+        "lateral_velocity_error": -0.40865230560302734,
+        "target_tracking_error": -0.013326449319720268
+      },
+      "maximum_source_mesh_clearance_per_foot_m": [
+        0.002100721001625061,
+        0.0027645565569400787
+      ],
+      "source_mesh_geometric_unload_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ],
+      "geometry_measurement_note": "URDF collision support vertices applied to Isaac link frame, >2mm AND force unloaded; runtime frame alignment pending",
+      "mean_velocity_body": [
+        0.09783114492893219,
+        0.00706617021933198,
+        0.06387092173099518
+      ],
+      "unload_sequence_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            36,
+            36
+          ],
+          "median_unload_seconds_per_foot": [
+            0.04,
+            0.06
+          ],
+          "alternating_transition_fraction": 0.9859154929577465,
+          "unload_sequence": [
+            0,
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ]
+    },
+    "forward_025": {
+      "command": [
+        0.25,
+        0,
+        0
+      ],
+      "xy_rmse": 0.1649368405342102,
+      "yaw_rmse": 0.31707513332366943,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.7981818318367004,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.289220929145813,
+      "mean_gravity_xy_norm": 0.05597548559308052,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 4.481886386871338,
+      "max_drift_m": 3.5835916996002197,
+      "mean_liftoffs_per_foot": [
+        29.0,
+        29.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending",
+      "mean_weighted_reward_rate": {
+        "track_lin_vel_xy_exp": 0.6927034258842468,
+        "track_ang_vel_z_exp": 1.7366406917572021,
+        "ang_vel_xy_l2": -0.03560743108391762,
+        "dof_torques_l2": -0.0007192850462161005,
+        "dof_acc_l2": -0.11767619848251343,
+        "action_rate_l2": -0.006616314873099327,
+        "flat_orientation_l2": -0.00978495366871357,
+        "dof_pos_limits": 0.0,
+        "termination_penalty": 0.0,
+        "feet_slide": -0.03090224601328373,
+        "joint_deviation_hip": -0.021175473928451538,
+        "yaw_error": -0.36119118332862854,
+        "progress": 1.9945552349090576,
+        "velocity_error": -0.3038213551044464,
+        "alternating_landing": 0.5587272047996521,
+        "lateral_velocity_error": -0.6980697512626648,
+        "target_tracking_error": -0.021151050925254822
+      },
+      "maximum_source_mesh_clearance_per_foot_m": [
+        0.0221230611205101,
+        0.02385653927922249
+      ],
+      "source_mesh_geometric_unload_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            29,
+            28
+          ],
+          "median_unload_seconds_per_foot": [
+            0.12,
+            0.12
+          ],
+          "alternating_transition_fraction": 1.0,
+          "unload_sequence": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ],
+      "geometry_measurement_note": "URDF collision support vertices applied to Isaac link frame, >2mm AND force unloaded; runtime frame alignment pending",
+      "mean_velocity_body": [
+        0.3042645752429962,
+        -0.006346011068671942,
+        -0.01865489035844803
+      ],
+      "unload_sequence_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            29,
+            28
+          ],
+          "median_unload_seconds_per_foot": [
+            0.16,
+            0.14
+          ],
+          "alternating_transition_fraction": 1.0,
+          "unload_sequence": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ]
+    },
+    "backward": {
+      "command": [
+        -0.1,
+        0,
+        0
+      ],
+      "xy_rmse": 0.09964662045240402,
+      "yaw_rmse": 0.0076047698967158794,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.30317869782447815,
+      "mean_gravity_xy_norm": 0.01373414695262909,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 0.8282407522201538,
+      "max_drift_m": 0.007806562352925539,
+      "mean_liftoffs_per_foot": [
+        0.0,
+        0.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending",
+      "mean_weighted_reward_rate": {
+        "track_lin_vel_xy_exp": 1.0602344274520874,
+        "track_ang_vel_z_exp": 2.997232675552368,
+        "ang_vel_xy_l2": -7.381317118415609e-06,
+        "dof_torques_l2": -0.00018626920063979924,
+        "dof_acc_l2": -0.00044379098108038306,
+        "action_rate_l2": -1.418951796949841e-06,
+        "flat_orientation_l2": -0.0005668795201927423,
+        "dof_pos_limits": 0.0,
+        "termination_penalty": 0.0,
+        "feet_slide": -0.0017939669778570533,
+        "joint_deviation_hip": -0.012176336720585823,
+        "yaw_error": -0.00907967146486044,
+        "progress": 0.007503386586904526,
+        "velocity_error": -0.19928409159183502,
+        "alternating_landing": 0.0,
+        "lateral_velocity_error": -0.00010335310798836872,
+        "target_tracking_error": -0.003692055121064186
+      },
+      "maximum_source_mesh_clearance_per_foot_m": [
+        2.2649765014648438e-06,
+        1.2777745723724365e-06
+      ],
+      "source_mesh_geometric_unload_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ],
+      "geometry_measurement_note": "URDF collision support vertices applied to Isaac link frame, >2mm AND force unloaded; runtime frame alignment pending",
+      "mean_velocity_body": [
+        -0.0003752069314941764,
+        4.9322763516101986e-05,
+        -0.0032860746141523123
+      ],
+      "unload_sequence_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ]
+    },
+    "turn_left": {
+      "command": [
+        0,
+        0,
+        0.3
+      ],
+      "xy_rmse": 0.0016362573951482773,
+      "yaw_rmse": 0.29355135560035706,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.29654037952423096,
+      "mean_gravity_xy_norm": 0.018644804134964943,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 1.2787675857543945,
+      "max_drift_m": 0.033474016934633255,
+      "mean_liftoffs_per_foot": [
+        0.0,
+        0.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending",
+      "mean_weighted_reward_rate": {
+        "track_lin_vel_xy_exp": 4.997913837432861,
+        "track_ang_vel_z_exp": 0.7561054229736328,
+        "ang_vel_xy_l2": -1.9432782210060395e-06,
+        "dof_torques_l2": -0.0002011145988944918,
+        "dof_acc_l2": -0.00020461541134864092,
+        "action_rate_l2": -7.729584439175596e-08,
+        "flat_orientation_l2": -0.0010446686064824462,
+        "dof_pos_limits": 0.0,
+        "termination_penalty": 0.0,
+        "feet_slide": -0.011363319121301174,
+        "joint_deviation_hip": -0.04141213744878769,
+        "yaw_error": -0.4402998387813568,
+        "progress": 0.0,
+        "velocity_error": -0.002387851011008024,
+        "alternating_landing": 0.0,
+        "lateral_velocity_error": -2.6551462724455632e-05,
+        "target_tracking_error": -0.0041757309809327126
+      },
+      "maximum_source_mesh_clearance_per_foot_m": [
+        -3.594905138015747e-06,
+        1.516193151473999e-06
+      ],
+      "source_mesh_geometric_unload_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ],
+      "geometry_measurement_note": "URDF collision support vertices applied to Isaac link frame, >2mm AND force unloaded; runtime frame alignment pending",
+      "mean_velocity_body": [
+        -0.0005493731005117297,
+        -0.00021465515601448715,
+        0.006466767750680447
+      ],
+      "unload_sequence_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ]
+    },
+    "turn_right": {
+      "command": [
+        0,
+        0,
+        -0.3
+      ],
+      "xy_rmse": 0.11224178969860077,
+      "yaw_rmse": 0.341949999332428,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.16545455157756805,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.28215351700782776,
+      "mean_gravity_xy_norm": 0.051758624613285065,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 3.4837584495544434,
+      "max_drift_m": 0.2603173851966858,
+      "mean_liftoffs_per_foot": [
+        0.0,
+        40.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending",
+      "mean_weighted_reward_rate": {
+        "track_lin_vel_xy_exp": 1.6408188343048096,
+        "track_ang_vel_z_exp": 1.2281954288482666,
+        "ang_vel_xy_l2": -0.007325904909521341,
+        "dof_torques_l2": -0.0005352265434339643,
+        "dof_acc_l2": -0.017116840928792953,
+        "action_rate_l2": -0.002939163474366069,
+        "flat_orientation_l2": -0.00826250296086073,
+        "dof_pos_limits": 0.0,
+        "termination_penalty": 0.0,
+        "feet_slide": -0.03631152585148811,
+        "joint_deviation_hip": -0.056572940200567245,
+        "yaw_error": -0.4323194622993469,
+        "progress": 0.0,
+        "velocity_error": -0.20058000087738037,
+        "alternating_landing": 0.00381818157620728,
+        "lateral_velocity_error": -0.3493468463420868,
+        "target_tracking_error": -0.011137852445244789
+      },
+      "maximum_source_mesh_clearance_per_foot_m": [
+        4.623085260391235e-06,
+        0.0019921474158763885
+      ],
+      "source_mesh_geometric_unload_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ],
+      "geometry_measurement_note": "URDF collision support vertices applied to Isaac link frame, >2mm AND force unloaded; runtime frame alignment pending",
+      "mean_velocity_body": [
+        0.02079111337661743,
+        0.007899986580014229,
+        -0.02016134187579155
+      ],
+      "unload_sequence_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            39
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            0.04
+          ],
+          "alternating_transition_fraction": 0.0,
+          "unload_sequence": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ]
+    },
+    "walk_turn": {
+      "command": [
+        0.15,
+        0,
+        0.3
+      ],
+      "xy_rmse": 0.11700957268476486,
+      "yaw_rmse": 0.15883979201316833,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.4399999976158142,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.2838784456253052,
+      "mean_gravity_xy_norm": 0.052155882120132446,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 3.83278489112854,
+      "max_drift_m": 0.8417498469352722,
+      "mean_liftoffs_per_foot": [
+        37.0,
+        37.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending",
+      "mean_weighted_reward_rate": {
+        "track_lin_vel_xy_exp": 1.6281180381774902,
+        "track_ang_vel_z_exp": 2.3478786945343018,
+        "ang_vel_xy_l2": -0.023089036345481873,
+        "dof_torques_l2": -0.0005943705909885466,
+        "dof_acc_l2": -0.11994956433773041,
+        "action_rate_l2": -0.005200273357331753,
+        "flat_orientation_l2": -0.008374684490263462,
+        "dof_pos_limits": 0.0,
+        "termination_penalty": 0.0,
+        "feet_slide": -0.08066805452108383,
+        "joint_deviation_hip": -0.014429190196096897,
+        "yaw_error": -0.17322656512260437,
+        "progress": 1.755600094795227,
+        "velocity_error": -0.2081489861011505,
+        "alternating_landing": 0.30672726035118103,
+        "lateral_velocity_error": -0.3785402178764343,
+        "target_tracking_error": -0.015565702691674232
+      },
+      "maximum_source_mesh_clearance_per_foot_m": [
+        0.004204902797937393,
+        0.0031659305095672607
+      ],
+      "source_mesh_geometric_unload_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            3,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            0.04,
+            null
+          ],
+          "alternating_transition_fraction": 0.0,
+          "unload_sequence": [
+            0,
+            0,
+            0
+          ],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ],
+      "geometry_measurement_note": "URDF collision support vertices applied to Isaac link frame, >2mm AND force unloaded; runtime frame alignment pending",
+      "mean_velocity_body": [
+        0.14212588965892792,
+        -0.00404529832303524,
+        0.34093084931373596
+      ],
+      "unload_sequence_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            36,
+            37
+          ],
+          "median_unload_seconds_per_foot": [
+            0.06,
+            0.08
+          ],
+          "alternating_transition_fraction": 1.0,
+          "unload_sequence": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ]
+    },
+    "start_stop": {
+      "command": [
+        0,
+        0,
+        0
+      ],
+      "xy_rmse": 0.06644870340824127,
+      "yaw_rmse": 0.09728051722049713,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.10727272927761078,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.2933463156223297,
+      "mean_gravity_xy_norm": 0.026566367596387863,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 4.479210376739502,
+      "max_drift_m": 0.4939708411693573,
+      "mean_liftoffs_per_foot": [
+        5.0,
+        5.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending",
+      "mean_weighted_reward_rate": {
+        "track_lin_vel_xy_exp": 4.105037689208984,
+        "track_ang_vel_z_exp": 2.7674946784973145,
+        "ang_vel_xy_l2": -0.005059184040874243,
+        "dof_torques_l2": -0.00030257555772550404,
+        "dof_acc_l2": -0.033753424882888794,
+        "action_rate_l2": -0.0010865835938602686,
+        "flat_orientation_l2": -0.00274587026797235,
+        "dof_pos_limits": 0.0,
+        "termination_penalty": 0.0,
+        "feet_slide": -0.01514287106692791,
+        "joint_deviation_hip": -0.028666431084275246,
+        "yaw_error": -0.08170239627361298,
+        "progress": 0.3450711965560913,
+        "velocity_error": -0.07239393144845963,
+        "alternating_landing": 0.07509090006351471,
+        "lateral_velocity_error": -0.11239228397607803,
+        "target_tracking_error": -0.006865856237709522
+      },
+      "maximum_source_mesh_clearance_per_foot_m": [
+        0.014560498297214508,
+        0.020198367536067963
+      ],
+      "source_mesh_geometric_unload_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            5,
+            4
+          ],
+          "median_unload_seconds_per_foot": [
+            0.1,
+            0.1
+          ],
+          "alternating_transition_fraction": 1.0,
+          "unload_sequence": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ],
+      "geometry_measurement_note": "URDF collision support vertices applied to Isaac link frame, >2mm AND force unloaded; runtime frame alignment pending",
+      "mean_velocity_body": [
+        0.04214513674378395,
+        0.0003994340368080884,
+        0.001788039691746235
+      ],
+      "unload_sequence_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            5,
+            5
+          ],
+          "median_unload_seconds_per_foot": [
+            0.12,
+            0.12
+          ],
+          "alternating_transition_fraction": 1.0,
+          "unload_sequence": [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ]
+    }
+  },
+  "safety_audit": {
+    "joint_limit_violation_physics_samples": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "nonfinite_joint_state_physics_samples": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "maximum_joint_limit_excursion_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sample_hz": 1000.0,
+    "ticks": 12001,
+    "tolerance_rad": 0.0
+  },
+  "physical_parameters": {
+    "body_names": [
+      "base_link",
+      "L0_Link",
+      "R0_Link",
+      "L1_Link",
+      "R1_Link",
+      "L2_Link",
+      "R2_Link",
+      "L3_Link",
+      "R3_Link",
+      "L4_Link_ankle",
+      "R4_Link_ankle"
+    ],
+    "total_mass_per_env_kg": [
+      8.41750717163086,
+      8.41750717163086,
+      8.41750717163086,
+      8.41750717163086,
+      8.41750717163086,
+      8.41750717163086,
+      8.41750717163086,
+      8.41750717163086
+    ],
+    "body_com_local": [
+      [
+        [
+          0.0,
+          0.0,
+          0.035999998450279236,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0006000000284984708,
+          0.0,
+          -0.05290000140666962,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -9.999999747378752e-05,
+          -0.05119999870657921,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          -0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          0.017799999564886093,
+          -0.0737999975681305,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          -0.017799999564886093,
+          -0.07370000332593918,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.00800000037997961,
+          -0.12200000137090683,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -0.007300000172108412,
+          -0.11760000139474869,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          -0.006800000090152025,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          0.0066999997943639755,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.035999998450279236,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0006000000284984708,
+          0.0,
+          -0.05290000140666962,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -9.999999747378752e-05,
+          -0.05119999870657921,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          -0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          0.017799999564886093,
+          -0.0737999975681305,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          -0.017799999564886093,
+          -0.07370000332593918,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.00800000037997961,
+          -0.12200000137090683,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -0.007300000172108412,
+          -0.11760000139474869,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          -0.006800000090152025,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          0.0066999997943639755,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.035999998450279236,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0006000000284984708,
+          0.0,
+          -0.05290000140666962,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -9.999999747378752e-05,
+          -0.05119999870657921,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          -0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          0.017799999564886093,
+          -0.0737999975681305,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          -0.017799999564886093,
+          -0.07370000332593918,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.00800000037997961,
+          -0.12200000137090683,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -0.007300000172108412,
+          -0.11760000139474869,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          -0.006800000090152025,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          0.0066999997943639755,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.035999998450279236,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0006000000284984708,
+          0.0,
+          -0.05290000140666962,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -9.999999747378752e-05,
+          -0.05119999870657921,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          -0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          0.017799999564886093,
+          -0.0737999975681305,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          -0.017799999564886093,
+          -0.07370000332593918,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.00800000037997961,
+          -0.12200000137090683,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -0.007300000172108412,
+          -0.11760000139474869,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          -0.006800000090152025,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          0.0066999997943639755,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.035999998450279236,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0006000000284984708,
+          0.0,
+          -0.05290000140666962,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -9.999999747378752e-05,
+          -0.05119999870657921,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          -0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          0.017799999564886093,
+          -0.0737999975681305,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          -0.017799999564886093,
+          -0.07370000332593918,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.00800000037997961,
+          -0.12200000137090683,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -0.007300000172108412,
+          -0.11760000139474869,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          -0.006800000090152025,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          0.0066999997943639755,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.035999998450279236,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0006000000284984708,
+          0.0,
+          -0.05290000140666962,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -9.999999747378752e-05,
+          -0.05119999870657921,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          -0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          0.017799999564886093,
+          -0.0737999975681305,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          -0.017799999564886093,
+          -0.07370000332593918,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.00800000037997961,
+          -0.12200000137090683,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -0.007300000172108412,
+          -0.11760000139474869,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          -0.006800000090152025,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          0.0066999997943639755,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.035999998450279236,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0006000000284984708,
+          0.0,
+          -0.05290000140666962,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -9.999999747378752e-05,
+          -0.05119999870657921,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          -0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          0.017799999564886093,
+          -0.0737999975681305,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          -0.017799999564886093,
+          -0.07370000332593918,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.00800000037997961,
+          -0.12200000137090683,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -0.007300000172108412,
+          -0.11760000139474869,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          -0.006800000090152025,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          0.0066999997943639755,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.035999998450279236,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0006000000284984708,
+          0.0,
+          -0.05290000140666962,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -9.999999747378752e-05,
+          -0.05119999870657921,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          -0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          0.017799999564886093,
+          -0.0737999975681305,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          -0.017799999564886093,
+          -0.07370000332593918,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.00800000037997961,
+          -0.12200000137090683,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -0.007300000172108412,
+          -0.11760000139474869,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          -0.006800000090152025,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          0.0066999997943639755,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    ],
+    "robot_materials": [
+      [
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ]
+      ]
+    ],
+    "actuators": {
+      "small": {
+        "joint_indices": [
+          0,
+          1,
+          8,
+          9
+        ],
+        "stiffness": [
+          [
+            15.0,
+            15.0,
+            15.0,
+            15.0
+          ],
+          [
+            15.0,
+            15.0,
+            15.0,
+            15.0
+          ],
+          [
+            15.0,
+            15.0,
+            15.0,
+            15.0
+          ],
+          [
+            15.0,
+            15.0,
+            15.0,
+            15.0
+          ],
+          [
+            15.0,
+            15.0,
+            15.0,
+            15.0
+          ],
+          [
+            15.0,
+            15.0,
+            15.0,
+            15.0
+          ],
+          [
+            15.0,
+            15.0,
+            15.0,
+            15.0
+          ],
+          [
+            15.0,
+            15.0,
+            15.0,
+            15.0
+          ]
+        ],
+        "damping": [
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
+        ]
+      },
+      "large": {
+        "joint_indices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "stiffness": [
+          [
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0
+          ],
+          [
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0
+          ],
+          [
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0
+          ],
+          [
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0
+          ],
+          [
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0
+          ],
+          [
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0
+          ],
+          [
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0
+          ],
+          [
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0
+          ]
+        ],
+        "damping": [
+          [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ]
+        ]
+      }
+    }
+  },
+  "command_suite": "full",
+  "observation_bootstrap_revision": 2,
+  "observation_bootstrap": "reset history then append current state, repeat first real sample",
+  "command_contract_revision": 2,
+  "command_switch_events": [
+    {
+      "time_seconds": 0.0,
+      "desired": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_by_policy": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "time_seconds": 10.0,
+      "desired": [
+        0.20000000298023224,
+        0.0,
+        0.0
+      ],
+      "observed_by_policy": [
+        0.20000000298023224,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "max_command_observation_error": 0.0,
+  "command_observation_alignment_pass": true,
+  "start_stop_schedule": "0 -> .2 -> 0, each10s repeating",
+  "push_applied": false,
+  "push_actual_delta_v_x": null,
+  "floor_normal_world": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "actor_override": null,
+  "geometry_default_link_alignment_error_m": 1.862645149230957e-07,
+  "geometry_default_link_alignment_pass": true,
+  "geometry_urdf_sha256": "f74e1ccb78b32a90680414d83f04ede574f25c1771286eeba3f30f6b8a962ac1",
+  "independent_fault_profile": null,
+  "task": "Tinker-Robust-v10",
+  "contract_version": 10,
+  "physics_task_alias": null,
+  "training_fault_model_active": false,
+  "fault_curriculum_override": 0.0
+}

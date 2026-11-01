@@ -1,0 +1,126 @@
+{
+  "checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v8/2026-11-01_15-51-40_forward_rehearsal_seed48/model_200.pt",
+  "scope": "single-command diagnostic changed filter contract, not v8 acceptance",
+  "cases": {
+    "baseline": {
+      "fell": false,
+      "survived_seconds": 20.00000000000146,
+      "xy_axis_rmse": [
+        0.030503160515374196,
+        0.11862219008587302
+      ],
+      "liftoffs_per_foot": [
+        52,
+        51
+      ],
+      "action_filter_alpha": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "roll08": {
+      "fell": false,
+      "survived_seconds": 20.00000000000146,
+      "xy_axis_rmse": [
+        0.04260318515323386,
+        0.11416976314002066
+      ],
+      "liftoffs_per_foot": [
+        53,
+        52
+      ],
+      "action_filter_alpha": [
+        1.0,
+        0.8,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.8,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "roll05": {
+      "fell": false,
+      "survived_seconds": 20.00000000000146,
+      "xy_axis_rmse": [
+        0.0801509796336038,
+        0.10091619621306239
+      ],
+      "liftoffs_per_foot": [
+        8,
+        23
+      ],
+      "action_filter_alpha": [
+        1.0,
+        0.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.5,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "roll03": {
+      "fell": false,
+      "survived_seconds": 20.00000000000146,
+      "xy_axis_rmse": [
+        0.09867562956203199,
+        0.08224485859361491
+      ],
+      "liftoffs_per_foot": [
+        1,
+        0
+      ],
+      "action_filter_alpha": [
+        1.0,
+        0.3,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.3,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "all05": {
+      "fell": false,
+      "survived_seconds": 20.00000000000146,
+      "xy_axis_rmse": [
+        0.08130179245146409,
+        0.11554135281963591
+      ],
+      "liftoffs_per_foot": [
+        13,
+        21
+      ],
+      "action_filter_alpha": [
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ]
+    }
+  }
+}

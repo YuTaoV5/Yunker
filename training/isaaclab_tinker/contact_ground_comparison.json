@@ -1,0 +1,43 @@
+{
+  "scope": "2-second contact instrumentation comparison, not gait acceptance",
+  "original_ground": "raw contact filtering unsupported by GPU; zero counts are missing data",
+  "diagnostic_ground": "explicit kinematic flat box, profile ground_box true",
+  "cases": {
+    "stand": {
+      "box_contacts_above_1N": 300,
+      "box_contact_point_slip_rms": 0.0043760668486356735,
+      "xy_rmse_difference_box_minus_original": 0.011509319767355919,
+      "base_height_difference_m": -0.0024609267711639404
+    },
+    "forward_010": {
+      "box_contacts_above_1N": 209,
+      "box_contact_point_slip_rms": 0.07810179144144058,
+      "xy_rmse_difference_box_minus_original": -0.003692314028739929,
+      "base_height_difference_m": 1.0251998901367188e-05
+    },
+    "forward_025": {
+      "box_contacts_above_1N": 159,
+      "box_contact_point_slip_rms": 0.04191911220550537,
+      "xy_rmse_difference_box_minus_original": -0.00645214319229126,
+      "base_height_difference_m": 0.00049591064453125
+    },
+    "backward": {
+      "box_contacts_above_1N": 227,
+      "box_contact_point_slip_rms": 0.007469728123396635,
+      "xy_rmse_difference_box_minus_original": -0.010808698832988739,
+      "base_height_difference_m": -0.0017966926097869873
+    },
+    "turn_left": {
+      "box_contacts_above_1N": 299,
+      "box_contact_point_slip_rms": 0.005926102865487337,
+      "xy_rmse_difference_box_minus_original": 0.021161026321351528,
+      "base_height_difference_m": -0.0012449324131011963
+    },
+    "turn_right": {
+      "box_contacts_above_1N": 218,
+      "box_contact_point_slip_rms": 0.03538776561617851,
+      "xy_rmse_difference_box_minus_original": 0.021494552493095398,
+      "base_height_difference_m": -0.001735985279083252
+    }
+  }
+}

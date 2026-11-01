@@ -1,0 +1,32 @@
+{
+  "task": "Tinker-Robust-v10",
+  "iteration": 1784,
+  "total_iterations": 3000,
+  "checked_at": "2026-11-01T10:30:06.365581+00:00",
+  "previous_report_iteration": 1589,
+  "acceptance": "NOT_PASSED",
+  "reward": 73.51,
+  "episode_length": 856.53,
+  "xy_error": 0.1438,
+  "yaw_error": 0.3989,
+  "base_contact": 0.1691,
+  "alternating_landing_reward": 0.1398,
+  "anchor_mse": 0.001,
+  "delta": 195,
+  "eta": "01:06:28",
+  "packet_fault_curriculum_fraction_estimate": 1.0,
+  "latest_evaluation": {
+    "checkpoint_iteration": 1500,
+    "file": "v10_forced_training_faults.json",
+    "status": "FAILED",
+    "scope": "20s/5s, seed123, 1 trial/case, forced training faults and observation noise; not full acceptance",
+    "fast_xy_rmse": 0.2000076473,
+    "slow_xy_rmse": 0.1424917877,
+    "fast_non_timeout_terminations": 1,
+    "right_turn_non_timeout_terminations": 2
+  },
+  "pending_inventory_runner_pid": 821525,
+  "gpu": "93 %, 5994 MiB, 46068 MiB",
+  "pending_review_runner_pid": 823650,
+  "usd_source_support_audit": "PASS source geometry only; cooked hull/margins unverified"
+}

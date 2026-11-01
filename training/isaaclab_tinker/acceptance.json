@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "status": "required_not_yet_passed",
+  "simulators": [
+    "IsaacLab",
+    "MuJoCo"
+  ],
+  "same_checkpoint_required": true,
+  "seeds": [
+    11,
+    42,
+    123,
+    2026,
+    9001
+  ],
+  "trials_per_case_per_seed": 20,
+  "trial_seconds": 60,
+  "warmup_seconds": 5,
+  "commands": {
+    "stand": [
+      0,
+      0,
+      0
+    ],
+    "forward_slow": [
+      0.1,
+      0,
+      0
+    ],
+    "forward": [
+      0.25,
+      0,
+      0
+    ],
+    "backward": [
+      -0.1,
+      0,
+      0
+    ],
+    "turn_left": [
+      0,
+      0,
+      0.3
+    ],
+    "turn_right": [
+      0,
+      0,
+      -0.3
+    ],
+    "walk_turn": [
+      0.15,
+      0,
+      0.3
+    ],
+    "start_stop": "0 -> .2 -> 0, each 10s"
+  },
+  "nominal_limits": {
+    "success_fraction_min": 0.95,
+    "xy_tracking_rmse_max_m_s": 0.06,
+    "yaw_tracking_rmse_max_rad_s": 0.12,
+    "stand_drift_max_m": 0.1,
+    "abs_roll_pitch_p99_max_deg": 15,
+    "joint_limit_violations_max": 0,
+    "nonfinite_values_max": 0,
+    "moving_requires_alternating_foot_liftoffs": true
+  },
+  "robust_limits": {
+    "success_fraction_min": 0.9,
+    "xy_tracking_rmse_max_m_s": 0.09,
+    "yaw_tracking_rmse_max_rad_s": 0.18,
+    "joint_limit_violations_max": 0,
+    "nonfinite_values_max": 0
+  },
+  "boundary_sweeps": {
+    "command_delay_ms": [
+      0,
+      10,
+      20,
+      40,
+      60
+    ],
+    "jitter_ms": [
+      0,
+      5,
+      10,
+      20
+    ],
+    "independent_packet_drop_probability": [
+      0,
+      0.01,
+      0.03,
+      0.05,
+      0.1
+    ],
+    "consecutive_command_loss_ms": [
+      40,
+      100,
+      200
+    ],
+    "observation_age_ms": [
+      0,
+      20,
+      40,
+      80
+    ],
+    "mass_scale": [
+      0.85,
+      1,
+      1.15
+    ],
+    "base_com_offset_xy_m": [
+      -0.02,
+      0,
+      0.02
+    ],
+    "friction": [
+      0.3,
+      0.5,
+      0.8,
+      1.2
+    ],
+    "kp_kd_scale": [
+      0.8,
+      1,
+      1.2
+    ],
+    "encoder_offset_rad": [
+      -0.02,
+      0,
+      0.02
+    ],
+    "floor_slope_deg": [
+      0,
+      3,
+      -3
+    ],
+    "push_delta_velocity_m_s": [
+      0.1,
+      0.2
+    ]
+  },
+  "failure_handling": {
+    "command_or_feedback_stale_ms": 200,
+    "require_documented_safe_response": true,
+    "note": "Long outages need watchdog response, not a promise of unlimited stale-command walking. Do not count freezing physics or automatic resets as recovery."
+  },
+  "method": "Nominal, each individual boundary, then fixed-seed sampled combinations; count falls before reset, distinguish timeout, report per-case and worst-case, never only aggregate reward. Numeric thresholds are engineering acceptance targets, not measured hardware guarantees.",
+  "export": {
+    "pytorch_onnx_max_abs_error": 1e-05,
+    "observation_layout_verified": true,
+    "action_joint_order_verified": true,
+    "history_reset_verified": true
+  },
+  "pending": [
+    "Implement complete fault-injection evaluator in both simulators",
+    "Calibrate model masses/COM against physical hardware when available",
+    "Render rollout videos and inspect contact geometry",
+    "Validate finite packet-loss/latency envelope and safe response"
+  ]
+}

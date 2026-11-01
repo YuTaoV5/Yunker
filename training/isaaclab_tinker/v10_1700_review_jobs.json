@@ -1,0 +1,56 @@
+{
+  "checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v10/2026-11-01_16-51-54_dagger_init_control_seed49/model_1700.pt",
+  "scope": "diagnostic; one trial per case, not acceptance matrix",
+  "jobs": {
+    "v10_usd_support_r2": {
+      "pid": 823651,
+      "command": [
+        "/isaac-sim/python.sh",
+        "evaluate.py",
+        "--asset-audit",
+        "--nominal",
+        "--robots-per-case",
+        "1",
+        "--seconds",
+        "2",
+        "--warmup-seconds",
+        ".5",
+        "--headless",
+        "--version",
+        "10",
+        "--checkpoint",
+        "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v10/2026-11-01_16-51-54_dagger_init_control_seed49/model_1700.pt",
+        "--output",
+        "v10_usd_support_r2.json"
+      ],
+      "status": "DONE",
+      "exit_code": 0
+    },
+    "v10_nominal1700_60s": {
+      "pid": 824074,
+      "command": [
+        "/isaac-sim/python.sh",
+        "evaluate.py",
+        "--nominal",
+        "--robots-per-case",
+        "1",
+        "--command-suite",
+        "full",
+        "--seed",
+        "11",
+        "--seconds",
+        "60",
+        "--warmup-seconds",
+        "5",
+        "--headless",
+        "--version",
+        "10",
+        "--checkpoint",
+        "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v10/2026-11-01_16-51-54_dagger_init_control_seed49/model_1700.pt",
+        "--output",
+        "v10_nominal1700_60s.json"
+      ],
+      "status": "RUNNING"
+    }
+  }
+}

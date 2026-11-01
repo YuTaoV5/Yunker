@@ -1,0 +1,28 @@
+{
+  "pid": 415025,
+  "task": "Tinker-Robust-v7",
+  "log": "train_robust_v7.log",
+  "iterations": 3000,
+  "seed": 47,
+  "initialization": "cloned_actor_dagger1.pt",
+  "source_snapshot": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/source_snapshots/v7_seed47",
+  "command": [
+    "/isaac-sim/python.sh",
+    "train.py",
+    "--task",
+    "Tinker-Robust-v7",
+    "--num_envs",
+    "1024",
+    "--max_iterations",
+    "3000",
+    "--seed",
+    "47",
+    "--run_name",
+    "dagger_init_1ms_seed47",
+    "--pretrained_actor",
+    "/root/gpufree-data/tinker-deployment/isaaclab_tinker/source_snapshots/v7_seed47/cloned_actor_dagger1.pt",
+    "--headless"
+  ],
+  "stop_reason": "confirmed slow-forward liftoff regression in both simulators; prepare BC auxiliary loss",
+  "retained_checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v7/2026-11-01_15-30-24_dagger_init_1ms_seed47/model_300.pt"
+}

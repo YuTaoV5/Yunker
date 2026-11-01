@@ -1,0 +1,98 @@
+{
+  "checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v4/2026-11-01_13-50-55_reference_residual_seed45/model_300.pt",
+  "contract_version": 4,
+  "model_source": "same URDF as Isaac Lab",
+  "scope": "preliminary; full acceptance matrix not implemented",
+  "cases": [
+    {
+      "seed": 123,
+      "command": [
+        0,
+        0,
+        0
+      ],
+      "fell": false,
+      "survived_seconds": 9.999999999999897,
+      "xy_rmse": 0.016046567189518843,
+      "yaw_rmse": 0.03159537212936965,
+      "mean_height": 0.29822999310632475,
+      "delay_ms": 0,
+      "drop_probability": 0
+    },
+    {
+      "seed": 123,
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "fell": false,
+      "survived_seconds": 9.999999999999897,
+      "xy_rmse": 0.1334832829822475,
+      "yaw_rmse": 0.05796163748533457,
+      "mean_height": 0.2841619877880371,
+      "delay_ms": 0,
+      "drop_probability": 0
+    },
+    {
+      "seed": 123,
+      "command": [
+        0.25,
+        0,
+        0
+      ],
+      "fell": false,
+      "survived_seconds": 9.999999999999897,
+      "xy_rmse": 0.2744381813123209,
+      "yaw_rmse": 0.09281611800779273,
+      "mean_height": 0.28360026042430836,
+      "delay_ms": 0,
+      "drop_probability": 0
+    },
+    {
+      "seed": 123,
+      "command": [
+        -0.1,
+        0,
+        0
+      ],
+      "fell": false,
+      "survived_seconds": 9.999999999999897,
+      "xy_rmse": 0.13204220639062517,
+      "yaw_rmse": 0.07028428548841778,
+      "mean_height": 0.2863966011986045,
+      "delay_ms": 0,
+      "drop_probability": 0
+    },
+    {
+      "seed": 123,
+      "command": [
+        0,
+        0,
+        0.3
+      ],
+      "fell": false,
+      "survived_seconds": 9.999999999999897,
+      "xy_rmse": 0.11370227049929023,
+      "yaw_rmse": 0.3266836908081601,
+      "mean_height": 0.28200008446687685,
+      "delay_ms": 0,
+      "drop_probability": 0
+    },
+    {
+      "seed": 123,
+      "command": [
+        0,
+        0,
+        -0.3
+      ],
+      "fell": false,
+      "survived_seconds": 9.999999999999897,
+      "xy_rmse": 0.12268993365724454,
+      "yaw_rmse": 0.3051251090890985,
+      "mean_height": 0.2841759357050564,
+      "delay_ms": 0,
+      "drop_probability": 0
+    }
+  ]
+}

@@ -1,0 +1,1680 @@
+{
+  "checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v10/2026-11-01_16-51-54_dagger_init_control_seed49/model_100.pt",
+  "contract_version": 10,
+  "model_source": "same URDF as Isaac Lab",
+  "command_suite": "full",
+  "scope": "preliminary; full acceptance matrix not implemented",
+  "cases": [
+    {
+      "geometric_liftoff_diagnostics": {
+        "qualified_unloads_per_foot": [
+          0,
+          0
+        ],
+        "median_unload_seconds_per_foot": [
+          null,
+          null
+        ],
+        "alternating_transition_fraction": null,
+        "unload_sequence": [],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "collision mesh minimum signed distance >2mm AND unloaded normal force; flat/sloped plane"
+      },
+      "clearance_threshold_m": 0.002,
+      "maximum_mesh_clearance_per_foot_m": [
+        -0.0004343882748696522,
+        -0.0003791279346035577
+      ],
+      "stance_contact_point_slip_rms_m_s": 0.005432596172651473,
+      "joint_limit_violation_physics_samples": 0,
+      "maximum_joint_limit_excursion_rad": 0.0,
+      "nonfinite_physics_samples": 0,
+      "audit_sample_hz": 1000,
+      "action_filter_alpha": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "physics_config": {},
+      "actual_total_mass_kg": 8.4175075,
+      "actual_base_com_local_m": [
+        0.0,
+        0.0,
+        0.036
+      ],
+      "actual_friction_coefficients": [
+        0.8,
+        1.0
+      ],
+      "gain_scale": 1.0,
+      "push_applied": false,
+      "command_switch_events": [
+        {
+          "time_seconds": 0.0,
+          "desired": [
+            0,
+            0,
+            0
+          ],
+          "observed_by_policy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "max_command_observation_error": 0.0,
+      "command_observation_alignment_pass": true,
+      "command_contract_revision": 2,
+      "command_schedule": null,
+      "initial_command": [
+        0,
+        0,
+        0
+      ],
+      "warmup_seconds": 1.0,
+      "unload_sequence_diagnostics": {
+        "qualified_unloads_per_foot": [
+          0,
+          0
+        ],
+        "median_unload_seconds_per_foot": [
+          null,
+          null
+        ],
+        "alternating_transition_fraction": null,
+        "unload_sequence": [],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "normal-force threshold; geometric clearance not established"
+      },
+      "seed": 123,
+      "command": [
+        0,
+        0,
+        0
+      ],
+      "fell": false,
+      "survived_seconds": 11.999999999998789,
+      "xy_rmse": 0.04322348302770004,
+      "yaw_rmse": 0.0601315213146732,
+      "mean_height": 0.29403404975609093,
+      "mean_velocity_body": [
+        0.0013990503327305393,
+        -0.00020779356208771479,
+        0.0004368408308165749
+      ],
+      "xy_axis_rmse": [
+        0.007360761627390055,
+        0.04259211984992781
+      ],
+      "evaluation_backend_revision": "mujoco_urdf_v2_visual_masks_preserved",
+      "nominal_friction_model": "robot and floor explicitly .8; earlier probes had default robot1.0",
+      "delay_ms": 0,
+      "drop_probability": 0,
+      "liftoffs_per_foot": [
+        0,
+        0
+      ],
+      "fraction_any_foot_unloaded": 0.0,
+      "jitter_ms": 0.0,
+      "sensor_age_ms": 0.0,
+      "sensor_drop": 0.0,
+      "burst_ms": 0.0,
+      "command_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 19.000000000006366
+      },
+      "sensor_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 0.0
+      },
+      "case_name": "stand"
+    },
+    {
+      "geometric_liftoff_diagnostics": {
+        "qualified_unloads_per_foot": [
+          36,
+          35
+        ],
+        "median_unload_seconds_per_foot": [
+          0.04,
+          0.06
+        ],
+        "alternating_transition_fraction": 1.0,
+        "unload_sequence": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "collision mesh minimum signed distance >2mm AND unloaded normal force; flat/sloped plane"
+      },
+      "clearance_threshold_m": 0.002,
+      "maximum_mesh_clearance_per_foot_m": [
+        0.005698524179659159,
+        0.005965044183409821
+      ],
+      "stance_contact_point_slip_rms_m_s": 0.09825159370516218,
+      "joint_limit_violation_physics_samples": 0,
+      "maximum_joint_limit_excursion_rad": 0.0,
+      "nonfinite_physics_samples": 0,
+      "audit_sample_hz": 1000,
+      "action_filter_alpha": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "physics_config": {},
+      "actual_total_mass_kg": 8.4175075,
+      "actual_base_com_local_m": [
+        0.0,
+        0.0,
+        0.036
+      ],
+      "actual_friction_coefficients": [
+        0.8,
+        1.0
+      ],
+      "gain_scale": 1.0,
+      "push_applied": false,
+      "command_switch_events": [
+        {
+          "time_seconds": 0.0,
+          "desired": [
+            0.1,
+            0,
+            0
+          ],
+          "observed_by_policy": [
+            0.10000000149011612,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "max_command_observation_error": 1.4901161138336505e-09,
+      "command_observation_alignment_pass": true,
+      "command_contract_revision": 2,
+      "command_schedule": null,
+      "initial_command": [
+        0.1,
+        0,
+        0
+      ],
+      "warmup_seconds": 1.0,
+      "unload_sequence_diagnostics": {
+        "qualified_unloads_per_foot": [
+          36,
+          35
+        ],
+        "median_unload_seconds_per_foot": [
+          0.08,
+          0.08
+        ],
+        "alternating_transition_fraction": 1.0,
+        "unload_sequence": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "normal-force threshold; geometric clearance not established"
+      },
+      "seed": 123,
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "fell": false,
+      "survived_seconds": 11.999999999998789,
+      "xy_rmse": 0.13771017968045338,
+      "yaw_rmse": 0.16944921010895098,
+      "mean_height": 0.28430326503843734,
+      "mean_velocity_body": [
+        0.12686515317666114,
+        0.011225982156269737,
+        0.08034552954630436
+      ],
+      "xy_axis_rmse": [
+        0.03282659322933629,
+        0.13374045148936212
+      ],
+      "evaluation_backend_revision": "mujoco_urdf_v2_visual_masks_preserved",
+      "nominal_friction_model": "robot and floor explicitly .8; earlier probes had default robot1.0",
+      "delay_ms": 0,
+      "drop_probability": 0,
+      "liftoffs_per_foot": [
+        36,
+        36
+      ],
+      "fraction_any_foot_unloaded": 0.509090909090909,
+      "jitter_ms": 0.0,
+      "sensor_age_ms": 0.0,
+      "sensor_drop": 0.0,
+      "burst_ms": 0.0,
+      "command_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 19.000000000006366
+      },
+      "sensor_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 0.0
+      },
+      "case_name": "forward_010"
+    },
+    {
+      "geometric_liftoff_diagnostics": {
+        "qualified_unloads_per_foot": [
+          30,
+          29
+        ],
+        "median_unload_seconds_per_foot": [
+          0.12,
+          0.12
+        ],
+        "alternating_transition_fraction": 1.0,
+        "unload_sequence": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "collision mesh minimum signed distance >2mm AND unloaded normal force; flat/sloped plane"
+      },
+      "clearance_threshold_m": 0.002,
+      "maximum_mesh_clearance_per_foot_m": [
+        0.02114962019484734,
+        0.025058805835187273
+      ],
+      "stance_contact_point_slip_rms_m_s": 0.08608832655165807,
+      "joint_limit_violation_physics_samples": 0,
+      "maximum_joint_limit_excursion_rad": 0.0,
+      "nonfinite_physics_samples": 0,
+      "audit_sample_hz": 1000,
+      "action_filter_alpha": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "physics_config": {},
+      "actual_total_mass_kg": 8.4175075,
+      "actual_base_com_local_m": [
+        0.0,
+        0.0,
+        0.036
+      ],
+      "actual_friction_coefficients": [
+        0.8,
+        1.0
+      ],
+      "gain_scale": 1.0,
+      "push_applied": false,
+      "command_switch_events": [
+        {
+          "time_seconds": 0.0,
+          "desired": [
+            0.25,
+            0,
+            0
+          ],
+          "observed_by_policy": [
+            0.25,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "max_command_observation_error": 0.0,
+      "command_observation_alignment_pass": true,
+      "command_contract_revision": 2,
+      "command_schedule": null,
+      "initial_command": [
+        0.25,
+        0,
+        0
+      ],
+      "warmup_seconds": 1.0,
+      "unload_sequence_diagnostics": {
+        "qualified_unloads_per_foot": [
+          30,
+          29
+        ],
+        "median_unload_seconds_per_foot": [
+          0.14,
+          0.14
+        ],
+        "alternating_transition_fraction": 1.0,
+        "unload_sequence": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "normal-force threshold; geometric clearance not established"
+      },
+      "seed": 123,
+      "command": [
+        0.25,
+        0,
+        0
+      ],
+      "fell": false,
+      "survived_seconds": 11.999999999998789,
+      "xy_rmse": 0.1582992135487403,
+      "yaw_rmse": 0.4799433650884861,
+      "mean_height": 0.28734069110028887,
+      "mean_velocity_body": [
+        0.27912881246333304,
+        0.01142280658082321,
+        0.1667640587788648
+      ],
+      "xy_axis_rmse": [
+        0.04419234428249097,
+        0.15200551870562937
+      ],
+      "evaluation_backend_revision": "mujoco_urdf_v2_visual_masks_preserved",
+      "nominal_friction_model": "robot and floor explicitly .8; earlier probes had default robot1.0",
+      "delay_ms": 0,
+      "drop_probability": 0,
+      "liftoffs_per_foot": [
+        30,
+        30
+      ],
+      "fraction_any_foot_unloaded": 0.7709090909090909,
+      "jitter_ms": 0.0,
+      "sensor_age_ms": 0.0,
+      "sensor_drop": 0.0,
+      "burst_ms": 0.0,
+      "command_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 19.000000000006366
+      },
+      "sensor_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 0.0
+      },
+      "case_name": "forward_025"
+    },
+    {
+      "geometric_liftoff_diagnostics": {
+        "qualified_unloads_per_foot": [
+          0,
+          0
+        ],
+        "median_unload_seconds_per_foot": [
+          null,
+          null
+        ],
+        "alternating_transition_fraction": null,
+        "unload_sequence": [],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "collision mesh minimum signed distance >2mm AND unloaded normal force; flat/sloped plane"
+      },
+      "clearance_threshold_m": 0.002,
+      "maximum_mesh_clearance_per_foot_m": [
+        -0.0004317921358928077,
+        -0.0005763775561016607
+      ],
+      "stance_contact_point_slip_rms_m_s": 0.0032722565311254876,
+      "joint_limit_violation_physics_samples": 0,
+      "maximum_joint_limit_excursion_rad": 0.0,
+      "nonfinite_physics_samples": 0,
+      "audit_sample_hz": 1000,
+      "action_filter_alpha": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "physics_config": {},
+      "actual_total_mass_kg": 8.4175075,
+      "actual_base_com_local_m": [
+        0.0,
+        0.0,
+        0.036
+      ],
+      "actual_friction_coefficients": [
+        0.8,
+        1.0
+      ],
+      "gain_scale": 1.0,
+      "push_applied": false,
+      "command_switch_events": [
+        {
+          "time_seconds": 0.0,
+          "desired": [
+            -0.1,
+            0,
+            0
+          ],
+          "observed_by_policy": [
+            -0.10000000149011612,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "max_command_observation_error": 1.4901161138336505e-09,
+      "command_observation_alignment_pass": true,
+      "command_contract_revision": 2,
+      "command_schedule": null,
+      "initial_command": [
+        -0.1,
+        0,
+        0
+      ],
+      "warmup_seconds": 1.0,
+      "unload_sequence_diagnostics": {
+        "qualified_unloads_per_foot": [
+          0,
+          0
+        ],
+        "median_unload_seconds_per_foot": [
+          null,
+          null
+        ],
+        "alternating_transition_fraction": null,
+        "unload_sequence": [],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "normal-force threshold; geometric clearance not established"
+      },
+      "seed": 123,
+      "command": [
+        -0.1,
+        0,
+        0
+      ],
+      "fell": false,
+      "survived_seconds": 11.999999999998789,
+      "xy_rmse": 0.1023448205166505,
+      "yaw_rmse": 0.06759174464822758,
+      "mean_height": 0.300210638211887,
+      "mean_velocity_body": [
+        -0.0003404978895644688,
+        0.0005056376794016962,
+        0.004150738390188474
+      ],
+      "xy_axis_rmse": [
+        0.09988136143876107,
+        0.02231985492168305
+      ],
+      "evaluation_backend_revision": "mujoco_urdf_v2_visual_masks_preserved",
+      "nominal_friction_model": "robot and floor explicitly .8; earlier probes had default robot1.0",
+      "delay_ms": 0,
+      "drop_probability": 0,
+      "liftoffs_per_foot": [
+        0,
+        0
+      ],
+      "fraction_any_foot_unloaded": 0.0,
+      "jitter_ms": 0.0,
+      "sensor_age_ms": 0.0,
+      "sensor_drop": 0.0,
+      "burst_ms": 0.0,
+      "command_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 19.000000000006366
+      },
+      "sensor_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 0.0
+      },
+      "case_name": "backward"
+    },
+    {
+      "geometric_liftoff_diagnostics": {
+        "qualified_unloads_per_foot": [
+          0,
+          0
+        ],
+        "median_unload_seconds_per_foot": [
+          null,
+          null
+        ],
+        "alternating_transition_fraction": null,
+        "unload_sequence": [],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "collision mesh minimum signed distance >2mm AND unloaded normal force; flat/sloped plane"
+      },
+      "clearance_threshold_m": 0.002,
+      "maximum_mesh_clearance_per_foot_m": [
+        -0.0004117871001524491,
+        -0.0003857473746658388
+      ],
+      "stance_contact_point_slip_rms_m_s": 0.004221452259961928,
+      "joint_limit_violation_physics_samples": 0,
+      "maximum_joint_limit_excursion_rad": 0.0,
+      "nonfinite_physics_samples": 0,
+      "audit_sample_hz": 1000,
+      "action_filter_alpha": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "physics_config": {},
+      "actual_total_mass_kg": 8.4175075,
+      "actual_base_com_local_m": [
+        0.0,
+        0.0,
+        0.036
+      ],
+      "actual_friction_coefficients": [
+        0.8,
+        1.0
+      ],
+      "gain_scale": 1.0,
+      "push_applied": false,
+      "command_switch_events": [
+        {
+          "time_seconds": 0.0,
+          "desired": [
+            0,
+            0,
+            0.3
+          ],
+          "observed_by_policy": [
+            0.0,
+            0.0,
+            0.30000001192092896
+          ]
+        }
+      ],
+      "max_command_observation_error": 1.1920928966180355e-08,
+      "command_observation_alignment_pass": true,
+      "command_contract_revision": 2,
+      "command_schedule": null,
+      "initial_command": [
+        0,
+        0,
+        0.3
+      ],
+      "warmup_seconds": 1.0,
+      "unload_sequence_diagnostics": {
+        "qualified_unloads_per_foot": [
+          0,
+          0
+        ],
+        "median_unload_seconds_per_foot": [
+          null,
+          null
+        ],
+        "alternating_transition_fraction": null,
+        "unload_sequence": [],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "normal-force threshold; geometric clearance not established"
+      },
+      "seed": 123,
+      "command": [
+        0,
+        0,
+        0.3
+      ],
+      "fell": false,
+      "survived_seconds": 11.999999999998789,
+      "xy_rmse": 0.019108223533587165,
+      "yaw_rmse": 0.29987301556273854,
+      "mean_height": 0.30054169364573724,
+      "mean_velocity_body": [
+        0.0006074747212443826,
+        -0.001085658463658457,
+        0.0019147090152246437
+      ],
+      "xy_axis_rmse": [
+        0.007935390870705626,
+        0.01738257110840212
+      ],
+      "evaluation_backend_revision": "mujoco_urdf_v2_visual_masks_preserved",
+      "nominal_friction_model": "robot and floor explicitly .8; earlier probes had default robot1.0",
+      "delay_ms": 0,
+      "drop_probability": 0,
+      "liftoffs_per_foot": [
+        0,
+        0
+      ],
+      "fraction_any_foot_unloaded": 0.0,
+      "jitter_ms": 0.0,
+      "sensor_age_ms": 0.0,
+      "sensor_drop": 0.0,
+      "burst_ms": 0.0,
+      "command_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 19.000000000006366
+      },
+      "sensor_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 0.0
+      },
+      "case_name": "turn_left"
+    },
+    {
+      "geometric_liftoff_diagnostics": {
+        "qualified_unloads_per_foot": [
+          3,
+          36
+        ],
+        "median_unload_seconds_per_foot": [
+          0.04,
+          0.06
+        ],
+        "alternating_transition_fraction": 0.15789473684210525,
+        "unload_sequence": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "collision mesh minimum signed distance >2mm AND unloaded normal force; flat/sloped plane"
+      },
+      "clearance_threshold_m": 0.002,
+      "maximum_mesh_clearance_per_foot_m": [
+        0.005742285415496158,
+        0.006878113506761069
+      ],
+      "stance_contact_point_slip_rms_m_s": 0.05618000968087748,
+      "joint_limit_violation_physics_samples": 0,
+      "maximum_joint_limit_excursion_rad": 0.0,
+      "nonfinite_physics_samples": 0,
+      "audit_sample_hz": 1000,
+      "action_filter_alpha": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "physics_config": {},
+      "actual_total_mass_kg": 8.4175075,
+      "actual_base_com_local_m": [
+        0.0,
+        0.0,
+        0.036
+      ],
+      "actual_friction_coefficients": [
+        0.8,
+        1.0
+      ],
+      "gain_scale": 1.0,
+      "push_applied": false,
+      "command_switch_events": [
+        {
+          "time_seconds": 0.0,
+          "desired": [
+            0,
+            0,
+            -0.3
+          ],
+          "observed_by_policy": [
+            0.0,
+            0.0,
+            -0.30000001192092896
+          ]
+        }
+      ],
+      "max_command_observation_error": 1.1920928966180355e-08,
+      "command_observation_alignment_pass": true,
+      "command_contract_revision": 2,
+      "command_schedule": null,
+      "initial_command": [
+        0,
+        0,
+        -0.3
+      ],
+      "warmup_seconds": 1.0,
+      "unload_sequence_diagnostics": {
+        "qualified_unloads_per_foot": [
+          35,
+          38
+        ],
+        "median_unload_seconds_per_foot": [
+          0.06,
+          0.08
+        ],
+        "alternating_transition_fraction": 0.9722222222222222,
+        "unload_sequence": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "normal-force threshold; geometric clearance not established"
+      },
+      "seed": 123,
+      "command": [
+        0,
+        0,
+        -0.3
+      ],
+      "fell": false,
+      "survived_seconds": 11.999999999998789,
+      "xy_rmse": 0.15008764125528692,
+      "yaw_rmse": 0.19234781698071354,
+      "mean_height": 0.2850042202610637,
+      "mean_velocity_body": [
+        0.054595028799347446,
+        0.022925834401558917,
+        -0.2068642762931632
+      ],
+      "xy_axis_rmse": [
+        0.0570881192058187,
+        0.13880650814395534
+      ],
+      "evaluation_backend_revision": "mujoco_urdf_v2_visual_masks_preserved",
+      "nominal_friction_model": "robot and floor explicitly .8; earlier probes had default robot1.0",
+      "delay_ms": 0,
+      "drop_probability": 0,
+      "liftoffs_per_foot": [
+        36,
+        38
+      ],
+      "fraction_any_foot_unloaded": 0.45454545454545453,
+      "jitter_ms": 0.0,
+      "sensor_age_ms": 0.0,
+      "sensor_drop": 0.0,
+      "burst_ms": 0.0,
+      "command_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 19.000000000006366
+      },
+      "sensor_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 0.0
+      },
+      "case_name": "turn_right"
+    },
+    {
+      "geometric_liftoff_diagnostics": {
+        "qualified_unloads_per_foot": [
+          35,
+          34
+        ],
+        "median_unload_seconds_per_foot": [
+          0.06,
+          0.06
+        ],
+        "alternating_transition_fraction": 1.0,
+        "unload_sequence": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "collision mesh minimum signed distance >2mm AND unloaded normal force; flat/sloped plane"
+      },
+      "clearance_threshold_m": 0.002,
+      "maximum_mesh_clearance_per_foot_m": [
+        0.007527022548243084,
+        0.006988970627738518
+      ],
+      "stance_contact_point_slip_rms_m_s": 0.09319562075015252,
+      "joint_limit_violation_physics_samples": 0,
+      "maximum_joint_limit_excursion_rad": 0.0,
+      "nonfinite_physics_samples": 0,
+      "audit_sample_hz": 1000,
+      "action_filter_alpha": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "physics_config": {},
+      "actual_total_mass_kg": 8.4175075,
+      "actual_base_com_local_m": [
+        0.0,
+        0.0,
+        0.036
+      ],
+      "actual_friction_coefficients": [
+        0.8,
+        1.0
+      ],
+      "gain_scale": 1.0,
+      "push_applied": false,
+      "command_switch_events": [
+        {
+          "time_seconds": 0.0,
+          "desired": [
+            0.15,
+            0,
+            0.3
+          ],
+          "observed_by_policy": [
+            0.15000000596046448,
+            0.0,
+            0.30000001192092896
+          ]
+        }
+      ],
+      "max_command_observation_error": 1.1920928966180355e-08,
+      "command_observation_alignment_pass": true,
+      "command_contract_revision": 2,
+      "command_schedule": null,
+      "initial_command": [
+        0.15,
+        0,
+        0.3
+      ],
+      "warmup_seconds": 1.0,
+      "unload_sequence_diagnostics": {
+        "qualified_unloads_per_foot": [
+          35,
+          34
+        ],
+        "median_unload_seconds_per_foot": [
+          0.08,
+          0.08
+        ],
+        "alternating_transition_fraction": 1.0,
+        "unload_sequence": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "normal-force threshold; geometric clearance not established"
+      },
+      "seed": 123,
+      "command": [
+        0.15,
+        0,
+        0.3
+      ],
+      "fell": false,
+      "survived_seconds": 11.999999999998789,
+      "xy_rmse": 0.13326598546556306,
+      "yaw_rmse": 0.33994676384285033,
+      "mean_height": 0.2850184085065411,
+      "mean_velocity_body": [
+        0.14751421789626426,
+        -0.012879778098741057,
+        0.5029968987816688
+      ],
+      "xy_axis_rmse": [
+        0.037849976152477545,
+        0.1277779409262981
+      ],
+      "evaluation_backend_revision": "mujoco_urdf_v2_visual_masks_preserved",
+      "nominal_friction_model": "robot and floor explicitly .8; earlier probes had default robot1.0",
+      "delay_ms": 0,
+      "drop_probability": 0,
+      "liftoffs_per_foot": [
+        35,
+        35
+      ],
+      "fraction_any_foot_unloaded": 0.5381818181818182,
+      "jitter_ms": 0.0,
+      "sensor_age_ms": 0.0,
+      "sensor_drop": 0.0,
+      "burst_ms": 0.0,
+      "command_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 19.000000000006366
+      },
+      "sensor_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 0.0
+      },
+      "case_name": "walk_turn"
+    },
+    {
+      "geometric_liftoff_diagnostics": {
+        "qualified_unloads_per_foot": [
+          5,
+          4
+        ],
+        "median_unload_seconds_per_foot": [
+          0.08,
+          0.1
+        ],
+        "alternating_transition_fraction": 1.0,
+        "unload_sequence": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "collision mesh minimum signed distance >2mm AND unloaded normal force; flat/sloped plane"
+      },
+      "clearance_threshold_m": 0.002,
+      "maximum_mesh_clearance_per_foot_m": [
+        0.019855944518062992,
+        0.01976252759519745
+      ],
+      "stance_contact_point_slip_rms_m_s": 0.03749259366115948,
+      "joint_limit_violation_physics_samples": 0,
+      "maximum_joint_limit_excursion_rad": 0.0,
+      "nonfinite_physics_samples": 0,
+      "audit_sample_hz": 1000,
+      "action_filter_alpha": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "physics_config": {},
+      "actual_total_mass_kg": 8.4175075,
+      "actual_base_com_local_m": [
+        0.0,
+        0.0,
+        0.036
+      ],
+      "actual_friction_coefficients": [
+        0.8,
+        1.0
+      ],
+      "gain_scale": 1.0,
+      "push_applied": false,
+      "command_switch_events": [
+        {
+          "time_seconds": 0.0,
+          "desired": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "observed_by_policy": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "time_seconds": 10.0,
+          "desired": [
+            0.2,
+            0.0,
+            0.0
+          ],
+          "observed_by_policy": [
+            0.20000000298023224,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "max_command_observation_error": 2.980232227667301e-09,
+      "command_observation_alignment_pass": true,
+      "command_contract_revision": 2,
+      "command_schedule": "start_stop",
+      "initial_command": [
+        0,
+        0,
+        0
+      ],
+      "warmup_seconds": 1.0,
+      "unload_sequence_diagnostics": {
+        "qualified_unloads_per_foot": [
+          5,
+          4
+        ],
+        "median_unload_seconds_per_foot": [
+          0.12,
+          0.14
+        ],
+        "alternating_transition_fraction": 1.0,
+        "unload_sequence": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "simultaneous_unload_events": 0,
+        "minimum_unload_seconds": 0.04,
+        "measurement": "normal-force threshold; geometric clearance not established"
+      },
+      "seed": 123,
+      "command": [
+        0.2,
+        0.0,
+        0.0
+      ],
+      "fell": false,
+      "survived_seconds": 11.999999999998789,
+      "xy_rmse": 0.0766035410165189,
+      "yaw_rmse": 0.12536094825407781,
+      "mean_height": 0.2929697527396823,
+      "mean_velocity_body": [
+        0.04007154917847986,
+        0.0035501769290324264,
+        0.01835009750772679
+      ],
+      "xy_axis_rmse": [
+        0.02490062364925804,
+        0.07244350514813251
+      ],
+      "evaluation_backend_revision": "mujoco_urdf_v2_visual_masks_preserved",
+      "nominal_friction_model": "robot and floor explicitly .8; earlier probes had default robot1.0",
+      "delay_ms": 0,
+      "drop_probability": 0,
+      "liftoffs_per_foot": [
+        5,
+        6
+      ],
+      "fraction_any_foot_unloaded": 0.11272727272727273,
+      "jitter_ms": 0.0,
+      "sensor_age_ms": 0.0,
+      "sensor_drop": 0.0,
+      "burst_ms": 0.0,
+      "command_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 19.000000000006366
+      },
+      "sensor_channel_stats": {
+        "sent": 600,
+        "dropped": 0,
+        "delivered": 600,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 0.0
+      },
+      "case_name": "start_stop"
+    }
+  ]
+}

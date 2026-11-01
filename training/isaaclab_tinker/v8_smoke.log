@@ -1,0 +1,262 @@
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /workspace/isaaclab/apps/isaaclab.python.headless.kit
+[INFO]: Parsing configuration from: <class 'iteration8.V8Cfg'>
+[INFO]: Parsing configuration from: <class 'iteration8.V8PPO'>
+[INFO] Logging experiment in directory: /root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v8
+Exact experiment name requested from command line: 2026-11-01_15-50-43
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-01_15-50-43.log[0m
+[36m======================================================================================[0m
+
+[33m15:50:43 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 48
+	Physics step-size     : 0.001
+	Rendering step-size   : 0.02
+	Environment step-size : 0.02
+[INFO]: Time taken for scene creation : 1.138970 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 64
+	Environment spacing   : 2.5
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : ['/World/ground']
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.677670 seconds
+[33m15:50:45 [velocity_command.py] WARNING: The velocity command has the 'ranges.heading' attribute set to '(-3.141592653589793, 3.141592653589793)' but the heading command is not active. Consider setting the flag for the heading command to True.[0m
+/isaac-sim/kit/python/lib/python3.11/site-packages/rsl_rl/utils/utils.py:245: UserWarning: The observation configuration dictionary 'obs_groups' must contain the 'policy' key. As an observation group with the name 'policy' was found, this is assumed to be the observation set. Consider adding the 'policy' key to the 'obs_groups' dictionary for clarity. This behavior will be removed in a future version.
+  warnings.warn(
+/isaac-sim/kit/python/lib/python3.11/site-packages/rsl_rl/utils/utils.py:291: UserWarning: The observation configuration dictionary 'obs_groups' must contain the 'critic' key. As the configuration for 'critic' is missing, the observations from the 'policy' set are used. Consider adding the 'critic' key to the 'obs_groups' dictionary for clarity. This behavior will be removed in a future version.
+  warnings.warn(
+[INFO] Command Manager:  <CommandManager> contains 1 active terms.
++------------------------------------------------+
+|              Active Command Terms              |
++-------+---------------+------------------------+
+| Index | Name          |          Type          |
++-------+---------------+------------------------+
+|   0   | base_velocity | UniformVelocityCommand |
++-------+---------------+------------------------+
+
+[INFO] Event Manager:  <EventManager> contains 2 active terms.
++--------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++----------+---------------------------+
+|  Index   | Name                      |
++----------+---------------------------+
+|    0     | physics_material          |
+|    1     | add_base_mass             |
+|    2     | base_com                  |
+|    3     | actuator_gains            |
++----------+---------------------------+
++-------------------------------------+
+| Active Event Terms in Mode: 'reset' |
++---------+---------------------------+
+|  Index  | Name                      |
++---------+---------------------------+
+|    0    | reset_base                |
+|    1    | reset_robot_joints        |
++---------+---------------------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO] Action Manager:  <ActionManager> contains 1 active terms.
++------------------------------------+
+|  Active Action Terms (shape: 10)   |
++--------+-------------+-------------+
+| Index  | Name        |   Dimension |
++--------+-------------+-------------+
+|   0    | joint_pos   |          10 |
++--------+-------------+-------------+
+
+[INFO] Observation Manager: <ObservationManager> contains 1 groups.
++---------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (195,)) |
++-----------+---------------------------------+-----------+
+|   Index   | Name                            |   Shape   |
++-----------+---------------------------------+-----------+
+|     0     | base_ang_vel                    |   (15,)   |
+|     1     | projected_gravity               |   (15,)   |
+|     2     | velocity_commands               |   (15,)   |
+|     3     | joint_pos                       |   (50,)   |
+|     4     | joint_vel                       |   (50,)   |
+|     5     | actions                         |   (50,)   |
++-----------+---------------------------------+-----------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 2 active terms.
++---------------------------------+
+|     Active Termination Terms    |
++-------+--------------+----------+
+| Index | Name         | Time Out |
++-------+--------------+----------+
+|   0   | time_out     |   True   |
+|   1   | base_contact |  False   |
++-------+--------------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 15 active terms.
++------------------------------------------+
+|           Active Reward Terms            |
++-------+----------------------+-----------+
+| Index | Name                 |    Weight |
++-------+----------------------+-----------+
+|   0   | track_lin_vel_xy_exp |       5.0 |
+|   1   | track_ang_vel_z_exp  |       3.0 |
+|   2   | ang_vel_xy_l2        |     -0.05 |
+|   3   | dof_torques_l2       |    -1e-05 |
+|   4   | dof_acc_l2           | -1.25e-07 |
+|   5   | action_rate_l2       |    -0.005 |
+|   6   | flat_orientation_l2  |      -3.0 |
+|   7   | dof_pos_limits       |      -1.0 |
+|   8   | termination_penalty  |     -50.0 |
+|   9   | feet_slide           |      -0.8 |
+|   10  | joint_deviation_hip  |      -0.2 |
+|   11  | yaw_error            |      -1.5 |
+|   12  | progress             |       2.0 |
+|   13  | single_support       |       1.5 |
+|   14  | velocity_error       |      -2.0 |
++-------+----------------------+-----------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 0 active terms.
++----------------------+
+| Active Curriculum Terms |
++-----------+----------+
+|   Index   | Name     |
++-----------+----------+
++-----------+----------+
+
+[INFO]: Completed setting up the environment...
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['policy']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=195, out_features=256, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=256, out_features=128, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=128, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=10, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=195, out_features=256, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=256, out_features=128, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=128, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=1, bias=True)
+)
+ANCHOR_DATA [{'path': '/root/gpufree-data/tinker-deployment/isaaclab_tinker/teacher_isaac_rollouts_1ms.npz', 'sha256': '61795748760e71d36a7ab4da8e2543020194598619c456aa3f6a83ab93e806f5', 'rows': 5400}, {'path': '/root/gpufree-data/tinker-deployment/isaaclab_tinker/teacher_isaac_rollouts_dagger1.npz', 'sha256': 'a269b69d3b932e4f1cb4d8b606e2a85bcf5a8aa471922906c3dde5e5a304c827', 'rows': 5994}]
+[INFO] Loaded supervised actor initialization: /root/gpufree-data/tinker-deployment/isaaclab_tinker/cloned_actor_dagger1.pt
+################################################################################
+                        [1m Learning iteration 0/2 [0m                        
+
+                       Computation: 427 steps/s (collection: 3.402s, learning 0.188s)
+             Mean action noise std: 0.08
+          Mean value_function loss: 0.2794
+               Mean surrogate loss: -0.0356
+                 Mean entropy loss: -11.0667
+              Mean anchor_mse loss: 0.0005
+                       Mean reward: 0.35
+               Mean episode length: 4.00
+Episode_Reward/track_lin_vel_xy_exp: 0.0147
+Episode_Reward/track_ang_vel_z_exp: 0.0078
+      Episode_Reward/ang_vel_xy_l2: -0.0000
+     Episode_Reward/dof_torques_l2: -0.0000
+         Episode_Reward/dof_acc_l2: -0.0036
+     Episode_Reward/action_rate_l2: -0.0000
+Episode_Reward/flat_orientation_l2: -0.0000
+     Episode_Reward/dof_pos_limits: 0.0000
+Episode_Reward/termination_penalty: 0.0000
+         Episode_Reward/feet_slide: -0.0001
+Episode_Reward/joint_deviation_hip: -0.0000
+          Episode_Reward/yaw_error: -0.0014
+           Episode_Reward/progress: 0.0044
+     Episode_Reward/single_support: 0.0012
+     Episode_Reward/velocity_error: -0.0005
+Metrics/base_velocity/error_vel_xy: 0.0004
+Metrics/base_velocity/error_vel_yaw: 0.0017
+      Episode_Termination/time_out: 0.0273
+  Episode_Termination/base_contact: 0.0000
+--------------------------------------------------------------------------------
+                   Total timesteps: 1536
+                    Iteration time: 3.59s
+                      Time elapsed: 00:00:03
+                               ETA: 00:00:07
+
+Could not find git repository in /isaac-sim/kit/python/lib/python3.11/site-packages/rsl_rl/__init__.py. Skipping.
+Could not find git repository in /root/gpufree-data/tinker-deployment/isaaclab_tinker/train.py. Skipping.
+################################################################################
+                        [1m Learning iteration 1/2 [0m                        
+
+                       Computation: 638 steps/s (collection: 2.304s, learning 0.102s)
+             Mean action noise std: 0.08
+          Mean value_function loss: 0.2512
+               Mean surrogate loss: -0.0229
+                 Mean entropy loss: -11.0693
+              Mean anchor_mse loss: 0.0005
+                       Mean reward: 0.35
+               Mean episode length: 4.00
+Episode_Reward/track_lin_vel_xy_exp: 0.0170
+Episode_Reward/track_ang_vel_z_exp: 0.0089
+      Episode_Reward/ang_vel_xy_l2: -0.0001
+     Episode_Reward/dof_torques_l2: -0.0000
+         Episode_Reward/dof_acc_l2: -0.0043
+     Episode_Reward/action_rate_l2: -0.0000
+Episode_Reward/flat_orientation_l2: -0.0000
+     Episode_Reward/dof_pos_limits: 0.0000
+Episode_Reward/termination_penalty: 0.0000
+         Episode_Reward/feet_slide: -0.0001
+Episode_Reward/joint_deviation_hip: -0.0000
+          Episode_Reward/yaw_error: -0.0016
+           Episode_Reward/progress: 0.0053
+     Episode_Reward/single_support: 0.0015
+     Episode_Reward/velocity_error: -0.0005
+Metrics/base_velocity/error_vel_xy: 0.0004
+Metrics/base_velocity/error_vel_yaw: 0.0019
+      Episode_Termination/time_out: 0.0312
+  Episode_Termination/base_contact: 0.0000
+--------------------------------------------------------------------------------
+                   Total timesteps: 3072
+                    Iteration time: 2.41s
+                      Time elapsed: 00:00:05
+                               ETA: 00:00:02
+
+Training time: 6.46 seconds
+Loading user config located at: '/isaac-sim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /isaac-sim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261101_155035.log
+2026-11-01T07:50:36Z [435ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-01T07:50:36Z [995ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-01T07:50:36Z [1,278ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-11-01T07:50:40Z [4,846ms] [Warning] [carb.graphics-vulkan.plugin] Could not initialize nvperf_grfx_host library. PerfSDK disabled
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 580.126.09    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA L40                       | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 26b5      | bcd19e13.. |
+|     |                                  |        |     |            | 36        |            |
+|=============================================================================================|
+| OS: 24.04.4 LTS (Noble Numbat) ubuntu, Version: 24.04.4, Kernel: 5.15.0-191-generic
+| XServer Vendor: The X.Org Foundation, XServer Version: 12101011 (1.21.1.11)
+| Processor: Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz
+| Bare Metal Cores: 64 | Bare Metal Logical Cores: 128
+| Core Usage Quota: 14
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 122880 | Free Memory: 116757
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-01T07:50:40Z [5,044ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0

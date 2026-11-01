@@ -1,0 +1,279 @@
+{
+  "checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v7/2026-11-01_15-30-24_dagger_init_1ms_seed47/model_100.pt",
+  "simulator": "MuJoCo",
+  "contract_version": 7,
+  "command": [
+    0.1,
+    0,
+    0
+  ],
+  "scope": "single command, single seed communication subset; no acceptance PASS implied",
+  "cases": {
+    "nominal": {
+      "seed": 123,
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "fell": false,
+      "survived_seconds": 20.00000000000146,
+      "xy_rmse": 0.13494194685115785,
+      "yaw_rmse": 0.13465944111473077,
+      "mean_height": 0.2793434821650776,
+      "delay_ms": 0.0,
+      "drop_probability": 0.0,
+      "liftoffs_per_foot": [
+        57,
+        58
+      ],
+      "fraction_any_foot_unloaded": 0.5411111111111111,
+      "jitter_ms": 0.0,
+      "sensor_age_ms": 0.0,
+      "sensor_drop": 0.0,
+      "burst_ms": 0.0,
+      "command_channel_stats": {
+        "sent": 1000,
+        "dropped": 0,
+        "delivered": 1000,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 19.000000000025466
+      },
+      "sensor_channel_stats": {
+        "sent": 1000,
+        "dropped": 0,
+        "delivered": 1000,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 0.0
+      }
+    },
+    "delay20": {
+      "seed": 123,
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "fell": false,
+      "survived_seconds": 20.00000000000146,
+      "xy_rmse": 0.1642741609876802,
+      "yaw_rmse": 0.21259231965120143,
+      "mean_height": 0.28249235747876233,
+      "delay_ms": 20,
+      "drop_probability": 0.0,
+      "liftoffs_per_foot": [
+        51,
+        51
+      ],
+      "fraction_any_foot_unloaded": 0.6355555555555555,
+      "jitter_ms": 0.0,
+      "sensor_age_ms": 0.0,
+      "sensor_drop": 0.0,
+      "burst_ms": 0.0,
+      "command_channel_stats": {
+        "sent": 1000,
+        "dropped": 0,
+        "delivered": 999,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 39.00000000005093
+      },
+      "sensor_channel_stats": {
+        "sent": 1000,
+        "dropped": 0,
+        "delivered": 1000,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 0.0
+      }
+    },
+    "delay20_jitter10": {
+      "seed": 123,
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "fell": false,
+      "survived_seconds": 20.00000000000146,
+      "xy_rmse": 0.1601636299271578,
+      "yaw_rmse": 0.24357753721047803,
+      "mean_height": 0.28265473918747447,
+      "delay_ms": 20,
+      "drop_probability": 0.0,
+      "liftoffs_per_foot": [
+        51,
+        51
+      ],
+      "fraction_any_foot_unloaded": 0.6333333333333333,
+      "jitter_ms": 10,
+      "sensor_age_ms": 0.0,
+      "sensor_drop": 0.0,
+      "burst_ms": 0.0,
+      "command_channel_stats": {
+        "sent": 1000,
+        "dropped": 0,
+        "delivered": 999,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 49.000000000061846
+      },
+      "sensor_channel_stats": {
+        "sent": 1000,
+        "dropped": 0,
+        "delivered": 1000,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 0.0
+      }
+    },
+    "drop5percent": {
+      "seed": 123,
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "fell": false,
+      "survived_seconds": 20.00000000000146,
+      "xy_rmse": 0.13611101153049993,
+      "yaw_rmse": 0.16450607627035316,
+      "mean_height": 0.2794991122340579,
+      "delay_ms": 0.0,
+      "drop_probability": 0.05,
+      "liftoffs_per_foot": [
+        58,
+        57
+      ],
+      "fraction_any_foot_unloaded": 0.5355555555555556,
+      "jitter_ms": 0.0,
+      "sensor_age_ms": 0.0,
+      "sensor_drop": 0.0,
+      "burst_ms": 0.0,
+      "command_channel_stats": {
+        "sent": 1000,
+        "dropped": 43,
+        "delivered": 957,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 59.00000000002001
+      },
+      "sensor_channel_stats": {
+        "sent": 1000,
+        "dropped": 0,
+        "delivered": 1000,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 0.0
+      }
+    },
+    "burst100": {
+      "seed": 123,
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "fell": false,
+      "survived_seconds": 20.00000000000146,
+      "xy_rmse": 0.13453457968656815,
+      "yaw_rmse": 0.1577363563111033,
+      "mean_height": 0.27944014791894134,
+      "delay_ms": 0.0,
+      "drop_probability": 0.0,
+      "liftoffs_per_foot": [
+        57,
+        58
+      ],
+      "fraction_any_foot_unloaded": 0.5366666666666666,
+      "jitter_ms": 0.0,
+      "sensor_age_ms": 0.0,
+      "sensor_drop": 0.0,
+      "burst_ms": 100,
+      "command_channel_stats": {
+        "sent": 1000,
+        "dropped": 5,
+        "delivered": 995,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 119.00000000003911
+      },
+      "sensor_channel_stats": {
+        "sent": 1000,
+        "dropped": 0,
+        "delivered": 1000,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 0.0
+      }
+    },
+    "sensor_age40": {
+      "seed": 123,
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "fell": false,
+      "survived_seconds": 20.00000000000146,
+      "xy_rmse": 0.18147459357632031,
+      "yaw_rmse": 0.3230653667677826,
+      "mean_height": 0.2843996173167929,
+      "delay_ms": 0.0,
+      "drop_probability": 0.0,
+      "liftoffs_per_foot": [
+        45,
+        45
+      ],
+      "fraction_any_foot_unloaded": 0.6933333333333334,
+      "jitter_ms": 0.0,
+      "sensor_age_ms": 40,
+      "sensor_drop": 0.0,
+      "burst_ms": 0.0,
+      "command_channel_stats": {
+        "sent": 1000,
+        "dropped": 0,
+        "delivered": 1000,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 19.000000000025466
+      },
+      "sensor_channel_stats": {
+        "sent": 1000,
+        "dropped": 0,
+        "delivered": 998,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 40.00000000005093
+      }
+    },
+    "sensor_drop5percent": {
+      "seed": 123,
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "fell": false,
+      "survived_seconds": 20.00000000000146,
+      "xy_rmse": 0.13632574870150596,
+      "yaw_rmse": 0.1330107368210571,
+      "mean_height": 0.27953984323256764,
+      "delay_ms": 0.0,
+      "drop_probability": 0.0,
+      "liftoffs_per_foot": [
+        58,
+        57
+      ],
+      "fraction_any_foot_unloaded": 0.5511111111111111,
+      "jitter_ms": 0.0,
+      "sensor_age_ms": 0.0,
+      "sensor_drop": 0.05,
+      "burst_ms": 0.0,
+      "command_channel_stats": {
+        "sent": 1000,
+        "dropped": 0,
+        "delivered": 1000,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 19.000000000025466
+      },
+      "sensor_channel_stats": {
+        "sent": 1000,
+        "dropped": 50,
+        "delivered": 950,
+        "out_of_order_discarded": 0,
+        "max_received_age_ms": 40.00000000001364
+      }
+    }
+  }
+}

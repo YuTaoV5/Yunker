@@ -1,0 +1,17 @@
+{
+  "task": "Tinker-Robust-v9",
+  "iteration": 444,
+  "total_iterations": 3000,
+  "checked_at": "2026-11-01T08:56:17.925540+00:00",
+  "acceptance": "NOT_PASSED",
+  "reward": 75.15,
+  "episode_length": 851.69,
+  "xy_error": 0.1874,
+  "yaw_error": 0.4016,
+  "base_contact": 0.2003,
+  "alternating_landing_reward": 0.2418,
+  "anchor_mse": 0.001,
+  "eta": "02:35:05",
+  "delta_from_last_report": 85,
+  "status": "stopped_for_initialization_control"
+}

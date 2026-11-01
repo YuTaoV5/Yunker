@@ -1,0 +1,98 @@
+{"checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v2/2026-11-01_12-47-58_gait_faults_seed43/model_700.pt", "model_source": "same URDF as Isaac Lab", "scope": "preliminary; full acceptance matrix not implemented", "cases": [{"seed": 123, "command": [0, 0, 0], "fell": true, "survived_seconds": 0.4600000000000003, "xy_rmse": null, "yaw_rmse": null, "mean_height": null, "delay_ms": 0, "drop_probability": 0}, {"seed": 123, "command": [0.1, 0, 0], "fell": true, "survived_seconds": 0.30000000000000016, "xy_rmse": null, "yaw_rmse": null, "mean_height": null, "delay_ms": 0, "drop_probability": 0}, {"seed": 123, "command": [0.25, 0, 0], "fell": true, "survived_seconds": 0.30000000000000016, "xy_rmse": null, "yaw_rmse": null, "mean_height": null, "delay_ms": 0, "drop_probability": 0}, {"seed": 123, "command": [-0.1, 0, 0], "fell": true, "survived_seconds": 0.6400000000000005, "xy_rmse": null, "yaw_rmse": null, "mean_height": null, "delay_ms": 0, "drop_probability": 0}, {"seed": 123, "command": [0, 0, 0.3], "fell": true, "survived_seconds": 0.5800000000000004, "xy_rmse": null, "yaw_rmse": null, "mean_height": null, "delay_ms": 0, "drop_probability": 0}, {"seed": 123, "command": [0, 0, -0.3], "fell": true, "survived_seconds": 0.40000000000000024, "xy_rmse": null, "yaw_rmse": null, "mean_height": null, "delay_ms": 0, "drop_probability": 0}]}
+{
+  "checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v2/2026-11-01_12-47-58_gait_faults_seed43/model_700.pt",
+  "model_source": "same URDF as Isaac Lab",
+  "scope": "preliminary; full acceptance matrix not implemented",
+  "cases": [
+    {
+      "seed": 123,
+      "command": [
+        0,
+        0,
+        0
+      ],
+      "fell": true,
+      "survived_seconds": 0.4600000000000003,
+      "xy_rmse": null,
+      "yaw_rmse": null,
+      "mean_height": null,
+      "delay_ms": 0,
+      "drop_probability": 0
+    },
+    {
+      "seed": 123,
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "fell": true,
+      "survived_seconds": 0.30000000000000016,
+      "xy_rmse": null,
+      "yaw_rmse": null,
+      "mean_height": null,
+      "delay_ms": 0,
+      "drop_probability": 0
+    },
+    {
+      "seed": 123,
+      "command": [
+        0.25,
+        0,
+        0
+      ],
+      "fell": true,
+      "survived_seconds": 0.30000000000000016,
+      "xy_rmse": null,
+      "yaw_rmse": null,
+      "mean_height": null,
+      "delay_ms": 0,
+      "drop_probability": 0
+    },
+    {
+      "seed": 123,
+      "command": [
+        -0.1,
+        0,
+        0
+      ],
+      "fell": true,
+      "survived_seconds": 0.6400000000000005,
+      "xy_rmse": null,
+      "yaw_rmse": null,
+      "mean_height": null,
+      "delay_ms": 0,
+      "drop_probability": 0
+    },
+    {
+      "seed": 123,
+      "command": [
+        0,
+        0,
+        0.3
+      ],
+      "fell": true,
+      "survived_seconds": 0.5800000000000004,
+      "xy_rmse": null,
+      "yaw_rmse": null,
+      "mean_height": null,
+      "delay_ms": 0,
+      "drop_probability": 0
+    },
+    {
+      "seed": 123,
+      "command": [
+        0,
+        0,
+        -0.3
+      ],
+      "fell": true,
+      "survived_seconds": 0.40000000000000024,
+      "xy_rmse": null,
+      "yaw_rmse": null,
+      "mean_height": null,
+      "delay_ms": 0,
+      "drop_probability": 0
+    }
+  ]
+}

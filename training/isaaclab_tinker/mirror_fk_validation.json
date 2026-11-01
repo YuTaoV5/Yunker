@@ -1,0 +1,39 @@
+{
+  "samples": 64,
+  "systematic_link_offset_m": [
+    -5.033643298403903e-09,
+    0.00035899364193190883,
+    9.651451284443252e-09
+  ],
+  "max_raw_position_error_m": 0.00035899998425470425,
+  "max_position_residual_after_CAD_offset_m": 1.6115390675435284e-07,
+  "max_rotation_matrix_error": 0.0,
+  "mass_pairs": [
+    {
+      "left": "L0_Link",
+      "right": "R0_Link",
+      "mass_difference_kg": 0.0
+    },
+    {
+      "left": "L1_Link",
+      "right": "R1_Link",
+      "mass_difference_kg": 9.00000000001594e-07
+    },
+    {
+      "left": "L2_Link",
+      "right": "R2_Link",
+      "mass_difference_kg": -0.0016100000000001113
+    },
+    {
+      "left": "L3_Link",
+      "right": "R3_Link",
+      "mass_difference_kg": 0.11806500000000009
+    },
+    {
+      "left": "L4_Link_ankle",
+      "right": "R4_Link_ankle",
+      "mass_difference_kg": 3.0000000000030003e-06
+    }
+  ],
+  "status": "kinematic mirror signs verified; CAD offset, mass asymmetry and asymmetric limits prevent claiming exact dynamics symmetry"
+}

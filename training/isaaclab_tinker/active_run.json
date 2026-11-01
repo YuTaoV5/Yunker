@@ -1,0 +1,28 @@
+{
+  "pid": 617441,
+  "task": "Tinker-Robust-v8",
+  "log": "train_robust_v8.log",
+  "iterations": 3000,
+  "seed": 48,
+  "initialization": "cloned_actor_dagger1.pt",
+  "source_snapshot": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/source_snapshots/v8_seed48",
+  "command": [
+    "/isaac-sim/python.sh",
+    "train.py",
+    "--task",
+    "Tinker-Robust-v8",
+    "--num_envs",
+    "1024",
+    "--max_iterations",
+    "3000",
+    "--seed",
+    "48",
+    "--run_name",
+    "forward_rehearsal_seed48",
+    "--pretrained_actor",
+    "/root/gpufree-data/tinker-deployment/isaaclab_tinker/source_snapshots/v8_seed48/cloned_actor_dagger1.pt",
+    "--headless"
+  ],
+  "contract": "same195D-direct-action-as-v7",
+  "change": "forward-only demonstration auxiliary MSE coefficient10, fixed lr3e-5; rewards/dynamics unchanged"
+}

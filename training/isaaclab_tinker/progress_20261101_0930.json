@@ -1,0 +1,19 @@
+{
+  "task": "Tinker-Robust-v10",
+  "iteration": 629,
+  "total_iterations": 3000,
+  "checked_at": "2026-11-01T09:30:38.433391+00:00",
+  "previous_report_iteration": 429,
+  "acceptance": "NOT_PASSED",
+  "reward": 78.27,
+  "episode_length": 997.03,
+  "xy_error": 0.1877,
+  "yaw_error": 0.4425,
+  "base_contact": 0.0334,
+  "alternating_landing_reward": 0.1564,
+  "anchor_mse": 0.001,
+  "delta": 200,
+  "eta": "02:24:23",
+  "packet_fault_curriculum_fraction_estimate": 0.13,
+  "curriculum_estimate_basis": "24 rollout steps per iteration; not forced-full-fault acceptance"
+}

@@ -1,0 +1,263 @@
+{
+    "version": "1.0",
+    "signal_type": "CTRL_PARAM_FLOAT",
+    "modules_include": [
+        "modules/Inc/gain_controller.h",
+        "modules/Inc/incremental_pid.h",
+        "modules/Inc/limit_controller.h",
+        "modules/Inc/offset_controller.h",
+        "modules/Inc/positional_pid.h",
+        "modules/Inc/ramp_injector.h",
+        "modules/Inc/curve_accel.h",
+        "modules/Inc/branch_judge.h",
+        "modules/Inc/mean_filter.h"
+    ],
+    "CtrlModules": [
+        {
+            "Name": "MODULE_GAIN",
+            "Type": "GainController_t",
+            "Init": "GainController_Init",
+            "Params": [
+                {
+                    "Name": "GAIN_PORT_INPUT",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "GAIN_PORT_GAIN",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                }
+            ]
+        },
+        {
+            "Name": "MODULE_LIMIT",
+            "Type": "LimitController_t",
+            "Init": "LimitController_Init",
+            "Params": [
+                {
+                    "Name": "LIMIT_PORT_INPUT",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "LIMIT_PORT_MIN",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "LIMIT_PORT_MAX",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                }
+            ]
+        },
+        {
+            "Name": "MODULE_OFFSET",
+            "Type": "OffsetController_t",
+            "Init": "OffsetController_Init",
+            "Params": [
+                {
+                    "Name": "OFFSET_PORT_INPUT",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "OFFSET_PORT_OFFSET",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                }
+            ]
+        },
+        {
+            "Name": "MODULE_POSITIONAL_PID",
+            "Type": "PositionalPID_t",
+            "Init": "PositionalPID_Init",
+            "Params": [
+                {
+                    "Name": "POSITIONALPID_PORT_INPUT",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "POSITIONALPID_PORT_KP",
+                    "Type": "CTRL_PARAM_FLOAT"
+                },
+                {
+                    "Name": "POSITIONALPID_PORT_KI",
+                    "Type": "CTRL_PARAM_FLOAT"
+                },
+                {
+                    "Name": "POSITIONALPID_PORT_KD",
+                    "Type": "CTRL_PARAM_FLOAT"
+                },
+                {
+                    "Name": "POSITIONALPID_PORT_SETPOINT",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "POSITIONALPID_PORT_INTEGRAL_LIMIT",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "POSITIONALPID_PORT_AUTO_RESET_ENABLE",
+                    "Type": "CTRL_PARAM_CHAR"
+                },
+                {
+                    "Name": "POSITIONALPID_PORT_AUTO_RESET_THRESHOLD",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                }
+            ]
+        },
+        {
+            "Name": "MODULE_INCREMENTAL_PID",
+            "Type": "IncrementalPID_t",
+            "Init": "IncrementalPID_Init",
+            "Params": [
+                {
+                    "Name": "POSITIONALPID_PORT_INPUT",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "POSITIONALPID_PORT_KP",
+                    "Type": "CTRL_PARAM_FLOAT"
+                },
+                {
+                    "Name": "POSITIONALPID_PORT_KI",
+                    "Type": "CTRL_PARAM_FLOAT"
+                },
+                {
+                    "Name": "POSITIONALPID_PORT_KD",
+                    "Type": "CTRL_PARAM_FLOAT"
+                },
+                {
+                    "Name": "POSITIONALPID_PORT_SETPOINT",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "POSITIONALPID_PORT_INTEGRAL_LIMIT",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "POSITIONALPID_PORT_AUTO_RESET_ENABLE",
+                    "Type": "CTRL_PARAM_CHAR"
+                },
+                {
+                    "Name": "POSITIONALPID_PORT_AUTO_RESET_THRESHOLD",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                }
+            ]
+        },
+        {
+            "Name": "MODULE_RAMP_INJECTOR",
+            "Type": "RampInjector_t",
+            "Init": "RampInjector_Init",
+            "Params": [
+                {
+                    "Name": "RAMPINJECT_PORT_INPUT",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "RAMPINJECT_PORT_RISE_STEP",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "RAMPINJECT_PORT_FALL_STEP",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                }
+            ]
+        },
+        {
+            "Name": "MODULE_CURVE_ACCEL",
+            "Type": "CurveAccel_t",
+            "Init": "CurveAccel_Init",
+            "Params": [
+                {
+                    "Name": "CURVEACCEL_PORT_INPUT",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "CURVEACCEL_PORT_ACCEL_GAIN",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "CURVEACCEL_PORT_DECEL_GAIN",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "CURVEACCEL_PORT_MAX_STEP",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                }
+            ]
+        },
+        {
+            "Name": "MODULE_BRANCH_JUDGE",
+            "Type": "BranchJudge_t",
+            "Init": "BranchJudge_Init",
+            "Params": [
+                {
+                    "Name": "BRANCHJUDGE_PORT_CONDITION",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "BRANCHJUDGE_PORT_TRUE_INPUT",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "BRANCHJUDGE_PORT_FALSE_INPUT",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "BRANCHJUDGE_PORT_THRESHOLD",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "BRANCHJUDGE_PORT_HYSTERESIS",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                }
+            ]
+        },
+        {
+            "Name": "MODULE_MEAN_FILTER",
+            "Type": "MeanFilter_t",
+            "Init": "MeanFilter_Init",
+            "Params": [
+                {
+                    "Name": "MEANFILTER_PORT_INPUT",
+                    "Type": "CTRL_PARAM_SIGNAL_T"
+                },
+                {
+                    "Name": "MEANFILTER_PORT_WINDOW_SIZE",
+                    "Type": "CTRL_PARAM_SIZE_T"
+                }
+            ]
+        }
+    ],
+    "params_include": [
+        "Motor.h"
+    ],
+    "Params": [
+        {
+            "Name": "Speed_A",
+            "Type": "CTRL_PARAM_SIGNAL_T",
+            "Ptr": "Motor_A.encoder_->Count_"
+        },
+        {
+            "Name": "Speed_B",
+            "Type": "CTRL_PARAM_SIGNAL_T",
+            "Ptr": "Motor_B.encoder_->Count_"
+        },
+        {
+            "Name": "Target_Speed_A",
+            "Type": "CTRL_PARAM_SIGNAL_T",
+            "Ptr": "Motor_A.target_speed_"
+        },
+        {
+            "Name": "Target_Speed_B",
+            "Type": "CTRL_PARAM_SIGNAL_T",
+            "Ptr": "Motor_B.target_speed_"
+        }
+    ],
+    "OutputParams": [
+        {
+            "Name": "Target_Speed_A",
+            "Ptr": "Motor_A.target_speed_"
+        },
+        {
+            "Name": "Target_Speed_B",
+            "Ptr": "Motor_B.target_speed_"
+        }
+    ]
+}

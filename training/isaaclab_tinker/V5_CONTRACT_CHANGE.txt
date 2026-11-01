@@ -1,0 +1,3 @@
+v5修正：奖励与执行使用同一reference_delta；膝幅.45rad、髋踝半幅，增加双髋roll=-.08*sin(phase)横向重心转移；目标=default+reference_delta+.0625*clamp(raw,-2,2)。参考权重2，脚高差目标.035*sin(phase)且宽度.012m权重2，根高度目标.30m宽度.025m权重2，平移误差L2范数惩罚-2，平移exp奖励std收紧.08。移除上游>0.1m/s才启用的airtime奖励，独立验收仍严格要求真实交替离地，不能因奖励字段删除就忽略抬脚。通信和动力学课程沿用v4，评估须强制fault_override=1。
+v4保留model1300已停止。v5冒烟32环境2轮通过，正式1024环境5000轮seed46。
+evaluate.py及mujoco_evaluate.py已支持version5动作契约，尚未评估v5行走效果；全部验收待定。

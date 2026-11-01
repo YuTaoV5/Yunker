@@ -1,0 +1,13 @@
+{
+  "task": "Tinker-Robust-v7",
+  "iteration": 353,
+  "previous_report_iteration": 275,
+  "status": "stopped_gait_regression",
+  "retained_checkpoint": "model_300.pt",
+  "reward": 78.8,
+  "episode_length": 1000.0,
+  "xy_error": 0.1833,
+  "yaw_error": 0.3477,
+  "base_contact": 0.0007,
+  "delta": 78
+}

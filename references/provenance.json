@@ -1,0 +1,32 @@
+[
+  {
+    "source": "OmniBotSeries-Tinker",
+    "archive": "references/OmniBotSeries-Tinker",
+    "commit": "075e79c91cce3360431c7f8db1f7aaa584a97244",
+    "note": "Working tree snapshot; .git and generated caches omitted; licenses retained"
+  },
+  {
+    "source": "OmniCtrl",
+    "archive": "references/OmniCtrl",
+    "commit": "a2eee6bed5a7f545b5fd43e536cbaf0cc4603327",
+    "note": "Working tree snapshot; .git and generated caches omitted; licenses retained"
+  },
+  {
+    "source": "legged-robot",
+    "archive": "firmware/legged-robot",
+    "commit": "26eb7972d82dd46f4959a4c9ed4d4cc99f4a64c5",
+    "note": "Working tree snapshot; .git and generated caches omitted; licenses retained"
+  },
+  {
+    "source": "legged-robot-ros2",
+    "archive": "robot/legged-robot-ros2",
+    "commit": "5502ed63fccaec1d19fcdc6519eedd6c86c648df",
+    "note": "Working tree snapshot; .git and generated caches omitted; licenses retained"
+  },
+  {
+    "source": "tinker_isaaclab",
+    "archive": "training/isaaclab_tinker",
+    "commit": null,
+    "note": "Working tree snapshot; .git and generated caches omitted; licenses retained"
+  }
+]

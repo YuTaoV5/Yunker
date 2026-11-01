@@ -1,0 +1,82 @@
+{
+  "round": 1,
+  "best_validation_mse": 0.0008249707170762122,
+  "target_angle_rmse_rad": 0.007180575869473372,
+  "sources": [
+    {
+      "path": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/teacher_isaac_rollouts_1ms.npz",
+      "sha256": "61795748760e71d36a7ab4da8e2543020194598619c456aa3f6a83ab93e806f5",
+      "train_rows": 16200,
+      "validation_rows": 5400
+    },
+    {
+      "path": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/teacher_isaac_rollouts_dagger1.npz",
+      "sha256": "a269b69d3b932e4f1cb4d8b606e2a85bcf5a8aa471922906c3dde5e5a304c827",
+      "train_rows": 17916,
+      "validation_rows": 5979
+    }
+  ],
+  "curve": [
+    {
+      "epoch": 0,
+      "validation_mse": 0.012386065907776356
+    },
+    {
+      "epoch": 10,
+      "validation_mse": 0.004815207328647375
+    },
+    {
+      "epoch": 20,
+      "validation_mse": 0.003185371635481715
+    },
+    {
+      "epoch": 30,
+      "validation_mse": 0.002433497691527009
+    },
+    {
+      "epoch": 40,
+      "validation_mse": 0.0019960578065365553
+    },
+    {
+      "epoch": 50,
+      "validation_mse": 0.0017641520826146007
+    },
+    {
+      "epoch": 60,
+      "validation_mse": 0.001561299548484385
+    },
+    {
+      "epoch": 70,
+      "validation_mse": 0.0014572902582585812
+    },
+    {
+      "epoch": 80,
+      "validation_mse": 0.0013181139947846532
+    },
+    {
+      "epoch": 90,
+      "validation_mse": 0.0011693520937114954
+    },
+    {
+      "epoch": 100,
+      "validation_mse": 0.0011011521564796567
+    },
+    {
+      "epoch": 110,
+      "validation_mse": 0.001051632221788168
+    },
+    {
+      "epoch": 120,
+      "validation_mse": 0.0009648442501202226
+    },
+    {
+      "epoch": 130,
+      "validation_mse": 0.0009492209646850824
+    },
+    {
+      "epoch": 140,
+      "validation_mse": 0.0008795787580311298
+    }
+  ],
+  "scope": "same-seed trajectory-held-out fitting only; closed-loop and independent seeds still required"
+}

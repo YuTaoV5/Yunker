@@ -1,0 +1,2716 @@
+{
+  "checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v10/2026-11-01_16-51-54_dagger_init_control_seed49/model_1300.pt",
+  "seed": 123,
+  "seconds": 2.0,
+  "warmup_seconds": 0.5,
+  "robots_per_case": 1,
+  "cases": {
+    "stand": {
+      "command": [
+        0,
+        0,
+        0
+      ],
+      "xy_rmse": 0.03302609175443649,
+      "yaw_rmse": 0.047941893339157104,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.2902432382106781,
+      "mean_gravity_xy_norm": 0.10917157679796219,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 8.413864135742188,
+      "max_drift_m": 0.05338939651846886,
+      "mean_liftoffs_per_foot": [
+        0.0,
+        0.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending",
+      "mean_weighted_reward_rate": {
+        "track_lin_vel_xy_exp": 4.302263259887695,
+        "track_ang_vel_z_exp": 2.8916633129119873,
+        "ang_vel_xy_l2": -0.00038679977296851575,
+        "dof_torques_l2": -0.0003440275904722512,
+        "dof_acc_l2": -0.000388835760531947,
+        "action_rate_l2": -1.6319989981639083e-06,
+        "flat_orientation_l2": -0.03953419253230095,
+        "dof_pos_limits": 0.0,
+        "termination_penalty": 0.0,
+        "feet_slide": -0.006761240307241678,
+        "joint_deviation_hip": -0.03719810023903847,
+        "yaw_error": -0.05413970351219177,
+        "progress": 0.0,
+        "velocity_error": -0.0536419041454792,
+        "alternating_landing": 0.0,
+        "lateral_velocity_error": -0.004961106926202774,
+        "target_tracking_error": -0.00645027682185173
+      },
+      "maximum_source_mesh_clearance_per_foot_m": [
+        1.471489667892456e-06,
+        1.3709068298339844e-06
+      ],
+      "source_mesh_geometric_unload_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ],
+      "geometry_measurement_note": "URDF collision support vertices applied to Isaac link frame, >2mm AND force unloaded; runtime frame alignment pending",
+      "trial_records": [
+        {
+          "trial_index": 0,
+          "failed": false,
+          "xy_rmse": 0.03302609175443649,
+          "yaw_rmse": 0.047941893339157104,
+          "abs_roll_pitch_p99_deg": 8.413864135742188,
+          "max_drift_m": 0.05338939651846886,
+          "joint_limit_violation_physics_samples": 0,
+          "nonfinite_physics_samples": 0,
+          "maximum_joint_limit_excursion_rad": 0.0
+        }
+      ],
+      "trial_start_note": "Controlled identical reset pose; independent initial-state fixtures not yet implemented",
+      "mean_velocity_body": [
+        0.024911031126976013,
+        0.001170857110992074,
+        -0.03078259713947773
+      ],
+      "unload_sequence_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ]
+    },
+    "forward_010": {
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "xy_rmse": 0.0858723595738411,
+      "yaw_rmse": 0.070668525993824,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.28506654500961304,
+      "mean_gravity_xy_norm": 0.20535516738891602,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 13.534883499145508,
+      "max_drift_m": 0.10786866396665573,
+      "mean_liftoffs_per_foot": [
+        0.0,
+        0.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending",
+      "mean_weighted_reward_rate": {
+        "track_lin_vel_xy_exp": 2.1843385696411133,
+        "track_ang_vel_z_exp": 2.7352962493896484,
+        "ang_vel_xy_l2": -0.0017744904616847634,
+        "dof_torques_l2": -0.0004928779671899974,
+        "dof_acc_l2": -0.0015477027045562863,
+        "action_rate_l2": -6.706220301566646e-05,
+        "flat_orientation_l2": -0.13591209053993225,
+        "dof_pos_limits": 0.0,
+        "termination_penalty": 0.0,
+        "feet_slide": -0.010446246713399887,
+        "joint_deviation_hip": -0.06033822521567345,
+        "yaw_error": -0.08247515559196472,
+        "progress": 0.7181293964385986,
+        "velocity_error": -0.15485017001628876,
+        "alternating_landing": 0.0,
+        "lateral_velocity_error": -0.03408537060022354,
+        "target_tracking_error": -0.00911572016775608
+      },
+      "maximum_source_mesh_clearance_per_foot_m": [
+        2.130866050720215e-06,
+        7.972121238708496e-07
+      ],
+      "source_mesh_geometric_unload_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ],
+      "geometry_measurement_note": "URDF collision support vertices applied to Isaac link frame, >2mm AND force unloaded; runtime frame alignment pending",
+      "trial_records": [
+        {
+          "trial_index": 0,
+          "failed": false,
+          "xy_rmse": 0.0858723595738411,
+          "yaw_rmse": 0.070668525993824,
+          "abs_roll_pitch_p99_deg": 13.534883499145508,
+          "max_drift_m": 0.10786866396665573,
+          "joint_limit_violation_physics_samples": 0,
+          "nonfinite_physics_samples": 0,
+          "maximum_joint_limit_excursion_rad": 0.0
+        }
+      ],
+      "trial_start_note": "Controlled identical reset pose; independent initial-state fixtures not yet implemented",
+      "mean_velocity_body": [
+        0.03591006621718407,
+        -0.01666189543902874,
+        -0.025102652609348297
+      ],
+      "unload_sequence_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ]
+    },
+    "forward_025": {
+      "command": [
+        0.25,
+        0,
+        0
+      ],
+      "xy_rmse": 0.15399259328842163,
+      "yaw_rmse": 0.320492684841156,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.6266666650772095,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.28682342171669006,
+      "mean_gravity_xy_norm": 0.07156219333410263,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 7.052440166473389,
+      "max_drift_m": 0.4337835907936096,
+      "mean_liftoffs_per_foot": [
+        4.0,
+        3.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending",
+      "mean_weighted_reward_rate": {
+        "track_lin_vel_xy_exp": 1.0801845788955688,
+        "track_ang_vel_z_exp": 1.6711761951446533,
+        "ang_vel_xy_l2": -0.032307256013154984,
+        "dof_torques_l2": -0.0007012211135588586,
+        "dof_acc_l2": -0.47557333111763,
+        "action_rate_l2": -0.0065554906614124775,
+        "flat_orientation_l2": -0.01807013526558876,
+        "dof_pos_limits": 0.0,
+        "termination_penalty": 0.0,
+        "feet_slide": -0.048507124185562134,
+        "joint_deviation_hip": -0.03127492219209671,
+        "yaw_error": -0.3642902374267578,
+        "progress": 1.7419079542160034,
+        "velocity_error": -0.2728813588619232,
+        "alternating_landing": 0.4386666417121887,
+        "lateral_velocity_error": -0.6146926879882812,
+        "target_tracking_error": -0.019810853525996208
+      },
+      "maximum_source_mesh_clearance_per_foot_m": [
+        0.023728162050247192,
+        0.024752892553806305
+      ],
+      "source_mesh_geometric_unload_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            4,
+            3
+          ],
+          "median_unload_seconds_per_foot": [
+            0.12,
+            0.1
+          ],
+          "alternating_transition_fraction": 1.0,
+          "unload_sequence": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ],
+      "geometry_measurement_note": "URDF collision support vertices applied to Isaac link frame, >2mm AND force unloaded; runtime frame alignment pending",
+      "trial_records": [
+        {
+          "trial_index": 0,
+          "failed": false,
+          "xy_rmse": 0.15399259328842163,
+          "yaw_rmse": 0.320492684841156,
+          "abs_roll_pitch_p99_deg": 7.052440166473389,
+          "max_drift_m": 0.4337835907936096,
+          "joint_limit_violation_physics_samples": 0,
+          "nonfinite_physics_samples": 0,
+          "maximum_joint_limit_excursion_rad": 0.0
+        }
+      ],
+      "trial_start_note": "Controlled identical reset pose; independent initial-state fixtures not yet implemented",
+      "mean_velocity_body": [
+        0.22796691954135895,
+        -0.030291153118014336,
+        -0.0032339906319975853
+      ],
+      "unload_sequence_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            4,
+            3
+          ],
+          "median_unload_seconds_per_foot": [
+            0.14,
+            0.12
+          ],
+          "alternating_transition_fraction": 1.0,
+          "unload_sequence": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ]
+    },
+    "backward": {
+      "command": [
+        -0.1,
+        0,
+        0
+      ],
+      "xy_rmse": 0.10807372629642487,
+      "yaw_rmse": 0.05286965146660805,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.2942435145378113,
+      "mean_gravity_xy_norm": 0.04512174800038338,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 3.488909959793091,
+      "max_drift_m": 0.016880162060260773,
+      "mean_liftoffs_per_foot": [
+        0.0,
+        0.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending",
+      "mean_weighted_reward_rate": {
+        "track_lin_vel_xy_exp": 0.8200538158416748,
+        "track_ang_vel_z_exp": 2.8742196559906006,
+        "ang_vel_xy_l2": -0.00043014754191972315,
+        "dof_torques_l2": -0.0001914818276418373,
+        "dof_acc_l2": -0.00015770687605254352,
+        "action_rate_l2": -0.00021624205692205578,
+        "flat_orientation_l2": -0.0064653088338673115,
+        "dof_pos_limits": 0.0,
+        "termination_penalty": 0.0,
+        "feet_slide": -0.004120454657822847,
+        "joint_deviation_hip": -0.02233327366411686,
+        "yaw_error": -0.06083185225725174,
+        "progress": -0.13338714838027954,
+        "velocity_error": -0.21586059033870697,
+        "alternating_landing": 0.0,
+        "lateral_velocity_error": -0.008163942955434322,
+        "target_tracking_error": -0.003864805679768324
+      },
+      "maximum_source_mesh_clearance_per_foot_m": [
+        2.6114284992218018e-06,
+        1.3783574104309082e-06
+      ],
+      "source_mesh_geometric_unload_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ],
+      "geometry_measurement_note": "URDF collision support vertices applied to Isaac link frame, >2mm AND force unloaded; runtime frame alignment pending",
+      "trial_records": [
+        {
+          "trial_index": 0,
+          "failed": false,
+          "xy_rmse": 0.10807372629642487,
+          "yaw_rmse": 0.05286965146660805,
+          "abs_roll_pitch_p99_deg": 3.488909959793091,
+          "max_drift_m": 0.016880162060260773,
+          "joint_limit_violation_physics_samples": 0,
+          "nonfinite_physics_samples": 0,
+          "maximum_joint_limit_excursion_rad": 0.0
+        }
+      ],
+      "trial_start_note": "Controlled identical reset pose; independent initial-state fixtures not yet implemented",
+      "mean_velocity_body": [
+        0.006670024245977402,
+        -0.0006376006058417261,
+        -0.03672996535897255
+      ],
+      "unload_sequence_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ]
+    },
+    "turn_left": {
+      "command": [
+        0,
+        0,
+        0.3
+      ],
+      "xy_rmse": 0.0361018143594265,
+      "yaw_rmse": 0.36180222034454346,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.2957679033279419,
+      "mean_gravity_xy_norm": 0.062233030796051025,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 6.560339450836182,
+      "max_drift_m": 0.050987593829631805,
+      "mean_liftoffs_per_foot": [
+        0.0,
+        0.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending",
+      "mean_weighted_reward_rate": {
+        "track_lin_vel_xy_exp": 4.149383068084717,
+        "track_ang_vel_z_exp": 0.44304174184799194,
+        "ang_vel_xy_l2": -0.0005868108128197491,
+        "dof_torques_l2": -0.000330403505358845,
+        "dof_acc_l2": -0.0009214653400704265,
+        "action_rate_l2": -2.4538834622944705e-05,
+        "flat_orientation_l2": -0.017203884199261665,
+        "dof_pos_limits": 0.0,
+        "termination_penalty": 0.0,
+        "feet_slide": -0.003563824575394392,
+        "joint_deviation_hip": -0.04497713968157768,
+        "yaw_error": -0.5373682379722595,
+        "progress": 0.0,
+        "velocity_error": -0.061914317309856415,
+        "alternating_landing": 0.0,
+        "lateral_velocity_error": -0.007469828240573406,
+        "target_tracking_error": -0.006385341286659241
+      },
+      "maximum_source_mesh_clearance_per_foot_m": [
+        2.4437904357910156e-06,
+        1.9855797290802e-06
+      ],
+      "source_mesh_geometric_unload_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ],
+      "geometry_measurement_note": "URDF collision support vertices applied to Isaac link frame, >2mm AND force unloaded; runtime frame alignment pending",
+      "trial_records": [
+        {
+          "trial_index": 0,
+          "failed": false,
+          "xy_rmse": 0.0361018143594265,
+          "yaw_rmse": 0.36180222034454346,
+          "abs_roll_pitch_p99_deg": 6.560339450836182,
+          "max_drift_m": 0.050987593829631805,
+          "joint_limit_violation_physics_samples": 0,
+          "nonfinite_physics_samples": 0,
+          "maximum_joint_limit_excursion_rad": 0.0
+        }
+      ],
+      "trial_start_note": "Controlled identical reset pose; independent initial-state fixtures not yet implemented",
+      "mean_velocity_body": [
+        0.027558300644159317,
+        -0.0012238259660080075,
+        -0.058245494961738586
+      ],
+      "unload_sequence_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ]
+    },
+    "turn_right": {
+      "command": [
+        0,
+        0,
+        -0.3
+      ],
+      "xy_rmse": 0.025367898866534233,
+      "yaw_rmse": 0.29043957591056824,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.2851572036743164,
+      "mean_gravity_xy_norm": 0.1531357318162918,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 10.131409645080566,
+      "max_drift_m": 0.06274332106113434,
+      "mean_liftoffs_per_foot": [
+        0.0,
+        0.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending",
+      "mean_weighted_reward_rate": {
+        "track_lin_vel_xy_exp": 4.579672813415527,
+        "track_ang_vel_z_exp": 0.8341322541236877,
+        "ang_vel_xy_l2": -0.00017893257609102875,
+        "dof_torques_l2": -0.0003976087609771639,
+        "dof_acc_l2": -0.00046473662951029837,
+        "action_rate_l2": -3.17907688440755e-06,
+        "flat_orientation_l2": -0.07123152166604996,
+        "dof_pos_limits": 0.0,
+        "termination_penalty": 0.0,
+        "feet_slide": -0.012325935065746307,
+        "joint_deviation_hip": -0.028416529297828674,
+        "yaw_error": -0.43376779556274414,
+        "progress": 0.0,
+        "velocity_error": -0.04486674442887306,
+        "alternating_landing": 0.0,
+        "lateral_velocity_error": -0.0038956599310040474,
+        "target_tracking_error": -0.007478427141904831
+      },
+      "maximum_source_mesh_clearance_per_foot_m": [
+        1.2405216693878174e-06,
+        2.2836029529571533e-06
+      ],
+      "source_mesh_geometric_unload_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ],
+      "geometry_measurement_note": "URDF collision support vertices applied to Isaac link frame, >2mm AND force unloaded; runtime frame alignment pending",
+      "trial_records": [
+        {
+          "trial_index": 0,
+          "failed": false,
+          "xy_rmse": 0.025367898866534233,
+          "yaw_rmse": 0.29043957591056824,
+          "abs_roll_pitch_p99_deg": 10.131409645080566,
+          "max_drift_m": 0.06274332106113434,
+          "joint_limit_violation_physics_samples": 0,
+          "nonfinite_physics_samples": 0,
+          "maximum_joint_limit_excursion_rad": 0.0
+        }
+      ],
+      "trial_start_note": "Controlled identical reset pose; independent initial-state fixtures not yet implemented",
+      "mean_velocity_body": [
+        0.020485831424593925,
+        -0.002270252676680684,
+        -0.010821480304002762
+      ],
+      "unload_sequence_diagnostics": [
+        {
+          "qualified_unloads_per_foot": [
+            0,
+            0
+          ],
+          "median_unload_seconds_per_foot": [
+            null,
+            null
+          ],
+          "alternating_transition_fraction": null,
+          "unload_sequence": [],
+          "simultaneous_unload_events": 0,
+          "minimum_unload_seconds": 0.04,
+          "measurement": "normal-force threshold; geometric clearance not established"
+        }
+      ]
+    }
+  },
+  "safety_audit": {
+    "joint_limit_violation_physics_samples": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "nonfinite_physics_state_samples": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "maximum_joint_limit_excursion_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sample_hz": 1000.0,
+    "ticks": 2001,
+    "tolerance_rad": 0.0
+  },
+  "physical_parameters": {
+    "body_names": [
+      "base_link",
+      "L0_Link",
+      "R0_Link",
+      "L1_Link",
+      "R1_Link",
+      "L2_Link",
+      "R2_Link",
+      "L3_Link",
+      "R3_Link",
+      "L4_Link_ankle",
+      "R4_Link_ankle"
+    ],
+    "total_mass_per_env_kg": [
+      8.41750717163086,
+      8.41750717163086,
+      8.41750717163086,
+      8.41750717163086,
+      8.41750717163086,
+      8.41750717163086
+    ],
+    "body_com_local": [
+      [
+        [
+          0.0,
+          0.0,
+          0.035999998450279236,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0006000000284984708,
+          0.0,
+          -0.05290000140666962,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -9.999999747378752e-05,
+          -0.05119999870657921,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          -0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          0.017799999564886093,
+          -0.0737999975681305,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          -0.017799999564886093,
+          -0.07370000332593918,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.00800000037997961,
+          -0.12200000137090683,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -0.007300000172108412,
+          -0.11760000139474869,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          -0.006800000090152025,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          0.0066999997943639755,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.035999998450279236,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0006000000284984708,
+          0.0,
+          -0.05290000140666962,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -9.999999747378752e-05,
+          -0.05119999870657921,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          -0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          0.017799999564886093,
+          -0.0737999975681305,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          -0.017799999564886093,
+          -0.07370000332593918,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.00800000037997961,
+          -0.12200000137090683,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -0.007300000172108412,
+          -0.11760000139474869,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          -0.006800000090152025,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          0.0066999997943639755,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.035999998450279236,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0006000000284984708,
+          0.0,
+          -0.05290000140666962,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -9.999999747378752e-05,
+          -0.05119999870657921,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          -0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          0.017799999564886093,
+          -0.0737999975681305,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          -0.017799999564886093,
+          -0.07370000332593918,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.00800000037997961,
+          -0.12200000137090683,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -0.007300000172108412,
+          -0.11760000139474869,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          -0.006800000090152025,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          0.0066999997943639755,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.035999998450279236,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0006000000284984708,
+          0.0,
+          -0.05290000140666962,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -9.999999747378752e-05,
+          -0.05119999870657921,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          -0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          0.017799999564886093,
+          -0.0737999975681305,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          -0.017799999564886093,
+          -0.07370000332593918,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.00800000037997961,
+          -0.12200000137090683,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -0.007300000172108412,
+          -0.11760000139474869,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          -0.006800000090152025,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          0.0066999997943639755,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.035999998450279236,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0006000000284984708,
+          0.0,
+          -0.05290000140666962,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -9.999999747378752e-05,
+          -0.05119999870657921,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          -0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          0.017799999564886093,
+          -0.0737999975681305,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          -0.017799999564886093,
+          -0.07370000332593918,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.00800000037997961,
+          -0.12200000137090683,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -0.007300000172108412,
+          -0.11760000139474869,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          -0.006800000090152025,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          0.0066999997943639755,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          0.0,
+          0.035999998450279236,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0006000000284984708,
+          0.0,
+          -0.05290000140666962,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -9.999999747378752e-05,
+          -0.05119999870657921,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0035000001080334187,
+          -0.03420000150799751,
+          -0.009200000204145908,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          0.017799999564886093,
+          -0.0737999975681305,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          -0.0007999999797903001,
+          -0.017799999564886093,
+          -0.07370000332593918,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.00800000037997961,
+          -0.12200000137090683,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -0.007300000172108412,
+          -0.11760000139474869,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          -0.006800000090152025,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.011800000444054604,
+          0.0066999997943639755,
+          -0.029600000008940697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    ],
+    "robot_materials": [
+      [
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ]
+      ],
+      [
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ],
+        [
+          0.800000011920929,
+          0.6000000238418579,
+          0.0
+        ]
+      ]
+    ],
+    "actuators": {
+      "small": {
+        "joint_indices": [
+          0,
+          1,
+          8,
+          9
+        ],
+        "stiffness": [
+          [
+            15.0,
+            15.0,
+            15.0,
+            15.0
+          ],
+          [
+            15.0,
+            15.0,
+            15.0,
+            15.0
+          ],
+          [
+            15.0,
+            15.0,
+            15.0,
+            15.0
+          ],
+          [
+            15.0,
+            15.0,
+            15.0,
+            15.0
+          ],
+          [
+            15.0,
+            15.0,
+            15.0,
+            15.0
+          ],
+          [
+            15.0,
+            15.0,
+            15.0,
+            15.0
+          ]
+        ],
+        "damping": [
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
+        ]
+      },
+      "large": {
+        "joint_indices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "stiffness": [
+          [
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0
+          ],
+          [
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0
+          ],
+          [
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0
+          ],
+          [
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0
+          ],
+          [
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0
+          ],
+          [
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0,
+            17.0
+          ]
+        ],
+        "damping": [
+          [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ]
+        ]
+      }
+    }
+  },
+  "contact_report_metadata": null,
+  "usd_asset_audit": {
+    "robot_hierarchy": [
+      {
+        "path": "/World/envs/env_0/Robot",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/base_link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/base_link/visuals",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/base_link/visuals/base_link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/base_link/visuals/base_link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/base_link/visuals/base_link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/base_link/visuals/base_link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/base_link/visuals/base_link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/base_link/visuals/base_link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/base_link/collisions",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/base_link/collisions/base_link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/base_link/collisions/base_link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/base_link/collisions/base_link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/base_link/collisions/base_link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/base_link/collisions/base_link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/base_link/collisions/base_link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link/visuals",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link/visuals/L0_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link/visuals/L0_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link/visuals/L0_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link/visuals/L0_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link/visuals/L0_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link/visuals/L0_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link/collisions",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link/collisions/L0_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link/collisions/L0_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link/collisions/L0_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link/collisions/L0_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link/collisions/L0_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link/collisions/L0_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/joints",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/joints/J_L0",
+        "type": "PhysicsRevoluteJoint"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/joints/J_L1",
+        "type": "PhysicsRevoluteJoint"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/joints/J_L2",
+        "type": "PhysicsRevoluteJoint"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/joints/J_L3",
+        "type": "PhysicsRevoluteJoint"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/joints/J_L4_ankle",
+        "type": "PhysicsRevoluteJoint"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/joints/J_R0",
+        "type": "PhysicsRevoluteJoint"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/joints/J_R1",
+        "type": "PhysicsRevoluteJoint"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/joints/J_R2",
+        "type": "PhysicsRevoluteJoint"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/joints/J_R3",
+        "type": "PhysicsRevoluteJoint"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/joints/J_R4_ankle",
+        "type": "PhysicsRevoluteJoint"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link/visuals",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link/visuals/L1_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link/visuals/L1_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link/visuals/L1_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link/visuals/L1_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link/visuals/L1_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link/visuals/L1_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link/collisions",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link/collisions/L1_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link/collisions/L1_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link/collisions/L1_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link/collisions/L1_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link/collisions/L1_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link/collisions/L1_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link/visuals",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link/visuals/L2_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link/visuals/L2_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link/visuals/L2_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link/visuals/L2_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link/visuals/L2_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link/visuals/L2_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link/collisions",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link/collisions/L2_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link/collisions/L2_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link/collisions/L2_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link/collisions/L2_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link/collisions/L2_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link/collisions/L2_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link/visuals",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link/visuals/L3_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link/visuals/L3_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link/visuals/L3_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link/visuals/L3_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link/visuals/L3_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link/visuals/L3_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link/collisions",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link/collisions/L3_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link/collisions/L3_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link/collisions/L3_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link/collisions/L3_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link/collisions/L3_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link/collisions/L3_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle/visuals",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle/visuals/L4_Link_ankle",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle/visuals/L4_Link_ankle/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle/visuals/L4_Link_ankle/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle/visuals/L4_Link_ankle/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle/visuals/L4_Link_ankle/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle/visuals/L4_Link_ankle/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle/collisions",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle/collisions/L4_Link_ankle",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle/collisions/L4_Link_ankle/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle/collisions/L4_Link_ankle/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle/collisions/L4_Link_ankle/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle/collisions/L4_Link_ankle/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle/collisions/L4_Link_ankle/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link/visuals",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link/visuals/R0_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link/visuals/R0_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link/visuals/R0_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link/visuals/R0_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link/visuals/R0_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link/visuals/R0_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link/collisions",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link/collisions/R0_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link/collisions/R0_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link/collisions/R0_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link/collisions/R0_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link/collisions/R0_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link/collisions/R0_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link/visuals",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link/visuals/R1_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link/visuals/R1_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link/visuals/R1_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link/visuals/R1_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link/visuals/R1_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link/visuals/R1_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link/collisions",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link/collisions/R1_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link/collisions/R1_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link/collisions/R1_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link/collisions/R1_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link/collisions/R1_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link/collisions/R1_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link/visuals",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link/visuals/R2_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link/visuals/R2_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link/visuals/R2_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link/visuals/R2_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link/visuals/R2_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link/visuals/R2_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link/collisions",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link/collisions/R2_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link/collisions/R2_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link/collisions/R2_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link/collisions/R2_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link/collisions/R2_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link/collisions/R2_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link/visuals",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link/visuals/R3_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link/visuals/R3_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link/visuals/R3_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link/visuals/R3_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link/visuals/R3_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link/visuals/R3_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link/collisions",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link/collisions/R3_Link",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link/collisions/R3_Link/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link/collisions/R3_Link/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link/collisions/R3_Link/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link/collisions/R3_Link/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link/collisions/R3_Link/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle/visuals",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle/visuals/R4_Link_ankle",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle/visuals/R4_Link_ankle/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle/visuals/R4_Link_ankle/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle/visuals/R4_Link_ankle/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle/visuals/R4_Link_ankle/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle/visuals/R4_Link_ankle/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle/collisions",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle/collisions/R4_Link_ankle",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle/collisions/R4_Link_ankle/node_STL_BINARY_",
+        "type": "Xform"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle/collisions/R4_Link_ankle/node_STL_BINARY_/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle/collisions/R4_Link_ankle/node_STL_BINARY_/Looks/DefaultMaterial",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle/collisions/R4_Link_ankle/node_STL_BINARY_/Looks/DefaultMaterial/DefaultMaterial",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle/collisions/R4_Link_ankle/node_STL_BINARY_/mesh",
+        "type": "Mesh"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/Looks",
+        "type": "Scope"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/Looks/material_808080",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/Looks/material_808080/Shader",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/Looks/material_E5EAED",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/Looks/material_E5EAED/Shader",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/Looks/material_CAD1EE",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/Looks/material_CAD1EE/Shader",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/Looks/material_100100100",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/Looks/material_100100100/Shader",
+        "type": "Shader"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/Looks/material_100E7EA",
+        "type": "Material"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/Looks/material_100E7EA/Shader",
+        "type": "Shader"
+      }
+    ],
+    "robot_collision_count": 11,
+    "robot_colliders": [
+      {
+        "path": "/World/envs/env_0/Robot/base_link/collisions/base_link/node_STL_BINARY_",
+        "type": "Xform",
+        "enabled": true,
+        "approximation": "convexHull"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L0_Link/collisions/L0_Link/node_STL_BINARY_",
+        "type": "Xform",
+        "enabled": true,
+        "approximation": "convexHull"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L1_Link/collisions/L1_Link/node_STL_BINARY_",
+        "type": "Xform",
+        "enabled": true,
+        "approximation": "convexHull"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L2_Link/collisions/L2_Link/node_STL_BINARY_",
+        "type": "Xform",
+        "enabled": true,
+        "approximation": "convexHull"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L3_Link/collisions/L3_Link/node_STL_BINARY_",
+        "type": "Xform",
+        "enabled": true,
+        "approximation": "convexHull"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/L4_Link_ankle/collisions/L4_Link_ankle/node_STL_BINARY_",
+        "type": "Xform",
+        "enabled": true,
+        "approximation": "convexHull"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R0_Link/collisions/R0_Link/node_STL_BINARY_",
+        "type": "Xform",
+        "enabled": true,
+        "approximation": "convexHull"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R1_Link/collisions/R1_Link/node_STL_BINARY_",
+        "type": "Xform",
+        "enabled": true,
+        "approximation": "convexHull"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R2_Link/collisions/R2_Link/node_STL_BINARY_",
+        "type": "Xform",
+        "enabled": true,
+        "approximation": "convexHull"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R3_Link/collisions/R3_Link/node_STL_BINARY_",
+        "type": "Xform",
+        "enabled": true,
+        "approximation": "convexHull"
+      },
+      {
+        "path": "/World/envs/env_0/Robot/R4_Link_ankle/collisions/R4_Link_ankle/node_STL_BINARY_",
+        "type": "Xform",
+        "enabled": true,
+        "approximation": "convexHull"
+      }
+    ],
+    "feet": {
+      "L4_Link_ankle": {
+        "support_match_pass": false,
+        "error": "No resolved foot collision Mesh; inspect robot_colliders and hierarchy",
+        "status": "MISSING_GEOMETRY"
+      },
+      "R4_Link_ankle": {
+        "support_match_pass": false,
+        "error": "No resolved foot collision Mesh; inspect robot_colliders and hierarchy",
+        "status": "MISSING_GEOMETRY"
+      }
+    },
+    "ground": [
+      {
+        "path": "/World/ground/terrain/GroundPlane/CollisionPlane",
+        "type": "Plane",
+        "approximation": null,
+        "bound_physics_material": "/World/ground/terrain/physicsMaterial",
+        "material_properties": {
+          "physics:dynamicFriction": "1.0",
+          "physics:restitution": "0.0",
+          "physics:staticFriction": "1.0",
+          "physxMaterial:dampingCombineMode": "average",
+          "physxMaterial:frictionCombineMode": "multiply",
+          "physxMaterial:restitutionCombineMode": "multiply"
+        }
+      }
+    ],
+    "urdf_sha256": "f74e1ccb78b32a90680414d83f04ede574f25c1771286eeba3f30f6b8a962ac1",
+    "note": "Source USD geometry/material bindings only; runtime randomized material values are recorded separately"
+  },
+  "observation_corruption_enabled": false,
+  "metric_revision": 3,
+  "physics_device": "cuda:0",
+  "command_suite": "fixed",
+  "observation_bootstrap_revision": 2,
+  "observation_bootstrap": "reset history then append current state, repeat first real sample",
+  "command_contract_revision": 2,
+  "command_switch_events": [],
+  "max_command_observation_error": 0.0,
+  "command_observation_alignment_pass": true,
+  "start_stop_schedule": null,
+  "push_applied": false,
+  "push_actual_delta_v_x": null,
+  "ground_geometry": "original_triangle_plane",
+  "floor_normal_world": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "actor_override": null,
+  "geometry_default_link_alignment_error_m": 1.862645149230957e-07,
+  "geometry_default_link_alignment_pass": true,
+  "geometry_urdf_sha256": "f74e1ccb78b32a90680414d83f04ede574f25c1771286eeba3f30f6b8a962ac1",
+  "independent_fault_profile": null,
+  "task": "Tinker-Robust-v10",
+  "contract_version": 10,
+  "physics_task_alias": null,
+  "training_fault_model_active": false,
+  "fault_curriculum_override": 0.0
+}

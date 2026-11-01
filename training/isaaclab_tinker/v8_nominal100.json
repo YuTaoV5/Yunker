@@ -1,0 +1,158 @@
+{
+  "checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v8/2026-11-01_15-51-40_forward_rehearsal_seed48/model_100.pt",
+  "seed": 123,
+  "seconds": 20.0,
+  "warmup_seconds": 2,
+  "robots_per_case": 4,
+  "cases": {
+    "stand": {
+      "command": [
+        0,
+        0,
+        0
+      ],
+      "xy_rmse": 0.06786912679672241,
+      "yaw_rmse": 0.07720887660980225,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.28456780314445496,
+      "mean_gravity_xy_norm": 0.029324430972337723,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 2.1069328784942627,
+      "max_drift_m": 0.06518211960792542,
+      "mean_liftoffs_per_foot": [
+        0.0,
+        0.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending"
+    },
+    "forward_010": {
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "xy_rmse": 0.12897157669067383,
+      "yaw_rmse": 0.15659603476524353,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.4652777910232544,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.28305673599243164,
+      "mean_gravity_xy_norm": 0.0464734248816967,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 3.849857807159424,
+      "max_drift_m": 2.4547641277313232,
+      "mean_liftoffs_per_foot": [
+        58.0,
+        57.75
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending"
+    },
+    "forward_025": {
+      "command": [
+        0.25,
+        0,
+        0
+      ],
+      "xy_rmse": 0.1628914475440979,
+      "yaw_rmse": 0.3065342903137207,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.7913889288902283,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.28938978910446167,
+      "mean_gravity_xy_norm": 0.05971605330705643,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 4.8062286376953125,
+      "max_drift_m": 5.947925090789795,
+      "mean_liftoffs_per_foot": [
+        47.0,
+        48.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending"
+    },
+    "backward": {
+      "command": [
+        -0.1,
+        0,
+        0
+      ],
+      "xy_rmse": 0.11140849441289902,
+      "yaw_rmse": 0.10884068161249161,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.2947544455528259,
+      "mean_gravity_xy_norm": 0.0188087560236454,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 1.2627992630004883,
+      "max_drift_m": 0.016353851184248924,
+      "mean_liftoffs_per_foot": [
+        0.0,
+        0.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending"
+    },
+    "turn_left": {
+      "command": [
+        0,
+        0,
+        0.3
+      ],
+      "xy_rmse": 0.06682361662387848,
+      "yaw_rmse": 0.3336697220802307,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.2907336354255676,
+      "mean_gravity_xy_norm": 0.029598012566566467,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 2.022312641143799,
+      "max_drift_m": 0.0462140329182148,
+      "mean_liftoffs_per_foot": [
+        0.0,
+        0.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending"
+    },
+    "turn_right": {
+      "command": [
+        0,
+        0,
+        -0.3
+      ],
+      "xy_rmse": 0.1602768748998642,
+      "yaw_rmse": 0.19218820333480835,
+      "episode_ends_in_measurement": 0,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 0,
+      "fraction_any_foot_unloaded": 0.6150000095367432,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.28284671902656555,
+      "mean_gravity_xy_norm": 0.030614158138632774,
+      "success_fraction_no_fall": 1.0,
+      "tilt_p99_deg": 3.180678129196167,
+      "max_drift_m": 0.3589811623096466,
+      "mean_liftoffs_per_foot": [
+        58.25,
+        59.0
+      ],
+      "scope": "six fixed commands only; alternating sequence, joint-limit and full boundary matrix still pending"
+    }
+  },
+  "task": "Tinker-Robust-v7",
+  "contract_version": 8,
+  "physics_task_alias": "Tinker-Robust-v7",
+  "training_fault_model_active": false,
+  "fault_curriculum_override": 0.0
+}

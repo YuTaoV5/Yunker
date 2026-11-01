@@ -1,0 +1,182 @@
+[
+  {
+    "roll_amplitude": 0.08,
+    "phase_lead": 0.0,
+    "knee_amplitude": 0.45,
+    "survived_seconds": 5.000000000000004,
+    "min_height": 0.27489106858432755,
+    "steps_with_foot_height_difference_gt15mm": 17,
+    "peak_foot_height_difference": 0.023131644826393766,
+    "x": 0.027620639170872183
+  },
+  {
+    "roll_amplitude": 0.12,
+    "phase_lead": 0.0,
+    "knee_amplitude": 0.45,
+    "survived_seconds": 5.000000000000004,
+    "min_height": 0.2695149932814035,
+    "steps_with_foot_height_difference_gt15mm": 13,
+    "peak_foot_height_difference": 0.025050990192098332,
+    "x": 0.029486998308102568
+  },
+  {
+    "roll_amplitude": 0.12,
+    "phase_lead": 1.5707963267948966,
+    "knee_amplitude": 0.3,
+    "survived_seconds": 5.000000000000004,
+    "min_height": 0.2737970185172534,
+    "steps_with_foot_height_difference_gt15mm": 12,
+    "peak_foot_height_difference": 0.02105689183405715,
+    "x": 0.02174925219670301
+  },
+  {
+    "roll_amplitude": 0.04,
+    "phase_lead": 1.5707963267948966,
+    "knee_amplitude": 0.3,
+    "survived_seconds": 5.000000000000004,
+    "min_height": 0.2764806453482967,
+    "steps_with_foot_height_difference_gt15mm": 11,
+    "peak_foot_height_difference": 0.02065084255080213,
+    "x": 0.029187136280029433
+  },
+  {
+    "roll_amplitude": 0.08,
+    "phase_lead": 1.5707963267948966,
+    "knee_amplitude": 0.3,
+    "survived_seconds": 5.000000000000004,
+    "min_height": 0.2754040080536619,
+    "steps_with_foot_height_difference_gt15mm": 11,
+    "peak_foot_height_difference": 0.020772152255949694,
+    "x": 0.025730212007412028
+  },
+  {
+    "roll_amplitude": 0.04,
+    "phase_lead": 0.7853981633974483,
+    "knee_amplitude": 0.3,
+    "survived_seconds": 5.000000000000004,
+    "min_height": 0.28047911035032125,
+    "steps_with_foot_height_difference_gt15mm": 7,
+    "peak_foot_height_difference": 0.017362924980548908,
+    "x": 0.03502484089808606
+  },
+  {
+    "roll_amplitude": 0.04,
+    "phase_lead": 0.0,
+    "knee_amplitude": 0.3,
+    "survived_seconds": 5.000000000000004,
+    "min_height": 0.28000693777613184,
+    "steps_with_foot_height_difference_gt15mm": 3,
+    "peak_foot_height_difference": 0.015684700102438137,
+    "x": 0.03977500725691836
+  },
+  {
+    "roll_amplitude": 0.08,
+    "phase_lead": 0.0,
+    "knee_amplitude": 0.3,
+    "survived_seconds": 5.000000000000004,
+    "min_height": 0.2804713190557078,
+    "steps_with_foot_height_difference_gt15mm": 0,
+    "peak_foot_height_difference": 0.012748437921599728,
+    "x": 0.03986767905020485
+  },
+  {
+    "roll_amplitude": 0.08,
+    "phase_lead": 0.7853981633974483,
+    "knee_amplitude": 0.3,
+    "survived_seconds": 5.000000000000004,
+    "min_height": 0.2819358878074627,
+    "steps_with_foot_height_difference_gt15mm": 0,
+    "peak_foot_height_difference": 0.013488204877395757,
+    "x": 0.03740323036276493
+  },
+  {
+    "roll_amplitude": 0.12,
+    "phase_lead": 0.0,
+    "knee_amplitude": 0.3,
+    "survived_seconds": 5.000000000000004,
+    "min_height": 0.2815543056798135,
+    "steps_with_foot_height_difference_gt15mm": 0,
+    "peak_foot_height_difference": 0.009444581575127967,
+    "x": 0.034992851083583056
+  },
+  {
+    "roll_amplitude": 0.12,
+    "phase_lead": 0.7853981633974483,
+    "knee_amplitude": 0.3,
+    "survived_seconds": 5.000000000000004,
+    "min_height": 0.28277541387661015,
+    "steps_with_foot_height_difference_gt15mm": 0,
+    "peak_foot_height_difference": 0.012461661622163528,
+    "x": 0.03417576610596109
+  },
+  {
+    "roll_amplitude": 0.12,
+    "phase_lead": 0.7853981633974483,
+    "knee_amplitude": 0.45,
+    "survived_seconds": 3.059999999999774,
+    "min_height": 0.22364269061571887,
+    "steps_with_foot_height_difference_gt15mm": 47,
+    "peak_foot_height_difference": 0.1298107452702501,
+    "x": 0.007418662000581521
+  },
+  {
+    "roll_amplitude": 0.04,
+    "phase_lead": 1.5707963267948966,
+    "knee_amplitude": 0.45,
+    "survived_seconds": 2.959999999999785,
+    "min_height": 0.22201425567625513,
+    "steps_with_foot_height_difference_gt15mm": 43,
+    "peak_foot_height_difference": 0.06579658479705089,
+    "x": 0.07318112797833376
+  },
+  {
+    "roll_amplitude": 0.04,
+    "phase_lead": 0.0,
+    "knee_amplitude": 0.45,
+    "survived_seconds": 2.6199999999998225,
+    "min_height": 0.21417452396725145,
+    "steps_with_foot_height_difference_gt15mm": 43,
+    "peak_foot_height_difference": 0.06380036877191594,
+    "x": 0.02257998508764953
+  },
+  {
+    "roll_amplitude": 0.08,
+    "phase_lead": 0.7853981633974483,
+    "knee_amplitude": 0.45,
+    "survived_seconds": 2.6199999999998225,
+    "min_height": 0.21832184284154785,
+    "steps_with_foot_height_difference_gt15mm": 42,
+    "peak_foot_height_difference": 0.06001390454669678,
+    "x": 0.019235779706573662
+  },
+  {
+    "roll_amplitude": 0.04,
+    "phase_lead": 0.7853981633974483,
+    "knee_amplitude": 0.45,
+    "survived_seconds": 2.559999999999829,
+    "min_height": 0.22477156729896502,
+    "steps_with_foot_height_difference_gt15mm": 39,
+    "peak_foot_height_difference": 0.07519545932942079,
+    "x": 0.012356445721395269
+  },
+  {
+    "roll_amplitude": 0.08,
+    "phase_lead": 1.5707963267948966,
+    "knee_amplitude": 0.45,
+    "survived_seconds": 2.1399999999998753,
+    "min_height": 0.23853540526666192,
+    "steps_with_foot_height_difference_gt15mm": 35,
+    "peak_foot_height_difference": 0.08687692988391818,
+    "x": 0.04849190998272202
+  },
+  {
+    "roll_amplitude": 0.12,
+    "phase_lead": 1.5707963267948966,
+    "knee_amplitude": 0.45,
+    "survived_seconds": 1.6799999999999258,
+    "min_height": 0.20256787781322566,
+    "steps_with_foot_height_difference_gt15mm": 36,
+    "peak_foot_height_difference": 0.059393408554283614,
+    "x": 0.03726900365069505
+  }
+]

@@ -1,0 +1,153 @@
+# ============================================================
+# OmniCtrl .gitignore
+# ============================================================
+
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python test / analysis cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+
+# Python packaging
+*.egg-info/
+.eggs/
+dist/
+
+
+# ------------------------------------------------------------
+# JetBrains IDEs
+# CLion / PyCharm / IntelliJ
+# ------------------------------------------------------------
+
+.idea/
+
+
+# ------------------------------------------------------------
+# Visual Studio Code
+# ------------------------------------------------------------
+
+.vscode/
+
+
+# ------------------------------------------------------------
+# CMake
+# ------------------------------------------------------------
+
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Generic build directories
+build/
+out/
+
+
+# ------------------------------------------------------------
+# Keil MDK
+# ------------------------------------------------------------
+
+# Compiler / linker outputs
+*.o
+*.obj
+*.d
+*.dep
+*.crf
+*.lnp
+*.lst
+*.map
+*.axf
+*.elf
+*.hex
+*.bin
+*.lib
+
+# Build logs
+*.build_log.htm
+*.htm
+
+# Keil user-specific GUI settings
+*.uvguix.*
+*.uvguix
+
+# Common Keil output directories
+**/MDK-ARM/Objects/
+**/MDK-ARM/Listings/
+
+# Current DC Motor Driver build output directory
+examples/DC_Motor_Driver/firmware/MDK-ARM/DC_Motor_Driver/
+
+
+# ------------------------------------------------------------
+# STM32 / Debug tools
+# ------------------------------------------------------------
+
+# ST-Link / debugger temporary files
+*.stlink-log
+
+# Debug session files
+*.dbgconf.user
+
+
+# ------------------------------------------------------------
+# Temporary / backup files
+# ------------------------------------------------------------
+
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.swp
+*.swo
+*~
+~$*
+
+
+# ------------------------------------------------------------
+# Operating systems
+# ------------------------------------------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+
+# Linux
+.directory
+
+
+# ------------------------------------------------------------
+# Logs
+# ------------------------------------------------------------
+
+*.log
+logs/
+
+# ------------------------------------------------------------
+# Others
+# ------------------------------------------------------------
+
+

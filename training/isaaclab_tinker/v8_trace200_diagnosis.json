@@ -1,0 +1,158 @@
+{
+  "checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v8/2026-11-01_15-51-40_forward_rehearsal_seed48/model_200.pt",
+  "cases": {
+    "nominal": {
+      "fell": false,
+      "survived_seconds": 20.00000000000146,
+      "xy_axis_rmse": [
+        0.030503160515374196,
+        0.11862219008587302
+      ],
+      "liftoffs_per_foot": [
+        52,
+        51
+      ],
+      "vy_dominant_hz": 3.4375,
+      "roll_rms_deg": 2.3326572543734043,
+      "joint_tracking_rmse": [
+        0.03330854503458682,
+        0.10415874473974868,
+        0.061771367725922975,
+        0.28407375441439775,
+        0.13145622179680805,
+        0.03438093015207381,
+        0.10261405298875084,
+        0.0687173620753302,
+        0.298824721302757,
+        0.13827155070871758
+      ],
+      "sampled_torque_saturation_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_order": [
+        "J_L0",
+        "J_L1",
+        "J_L2",
+        "J_L3",
+        "J_L4_ankle",
+        "J_R0",
+        "J_R1",
+        "J_R2",
+        "J_R3",
+        "J_R4_ankle"
+      ],
+      "trace": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/v8_trace200_nominal.npz"
+    },
+    "gain08": {
+      "fell": false,
+      "survived_seconds": 20.00000000000146,
+      "xy_axis_rmse": [
+        0.022153656474634936,
+        0.12277579087987962
+      ],
+      "liftoffs_per_foot": [
+        47,
+        48
+      ],
+      "vy_dominant_hz": 3.125,
+      "roll_rms_deg": 2.141386242976921,
+      "joint_tracking_rmse": [
+        0.03528514972977064,
+        0.12233779056272275,
+        0.07711916804956155,
+        0.371789099379989,
+        0.1779402330745234,
+        0.03522049637530558,
+        0.13295999168754644,
+        0.08764738788083204,
+        0.3770384427389478,
+        0.18886856012626263
+      ],
+      "sampled_torque_saturation_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_order": [
+        "J_L0",
+        "J_L1",
+        "J_L2",
+        "J_L3",
+        "J_L4_ankle",
+        "J_R0",
+        "J_R1",
+        "J_R2",
+        "J_R3",
+        "J_R4_ankle"
+      ],
+      "trace": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/v8_trace200_gain08.npz"
+    },
+    "gain12": {
+      "fell": false,
+      "survived_seconds": 20.00000000000146,
+      "xy_axis_rmse": [
+        0.07169284549648695,
+        0.10616561652852591
+      ],
+      "liftoffs_per_foot": [
+        25,
+        39
+      ],
+      "vy_dominant_hz": 3.875,
+      "roll_rms_deg": 3.108056057837453,
+      "joint_tracking_rmse": [
+        0.036489909533669755,
+        0.0700432128107885,
+        0.04792253497495701,
+        0.21779659579165545,
+        0.0933648137915333,
+        0.02984724400600839,
+        0.062180166942829,
+        0.051150588150931556,
+        0.23930523435383705,
+        0.12882387682375648
+      ],
+      "sampled_torque_saturation_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "joint_order": [
+        "J_L0",
+        "J_L1",
+        "J_L2",
+        "J_L3",
+        "J_L4_ankle",
+        "J_R0",
+        "J_R1",
+        "J_R2",
+        "J_R3",
+        "J_R4_ankle"
+      ],
+      "trace": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/v8_trace200_gain12.npz"
+    }
+  }
+}

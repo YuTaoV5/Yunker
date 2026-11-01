@@ -1,0 +1,43 @@
+  Episode_Termination/base_contact: 0.0551
+--------------------------------------------------------------------------------
+                   Total timesteps: 56672256
+                    Iteration time: 0.63s
+                      Time elapsed: 00:23:31
+                               ETA: 00:07:05
+
+################################################################################
+                     [1m Learning iteration 2306/3000 [0m                     
+
+                       Computation: 41016 steps/s (collection: 0.509s, learning 0.090s)
+             Mean action noise std: 0.35
+          Mean value_function loss: 0.0022
+               Mean surrogate loss: -0.0016
+                 Mean entropy loss: 1.1311
+                       Mean reward: 29.58
+               Mean episode length: 984.77
+Episode_Reward/track_lin_vel_xy_exp: 0.8581
+Episode_Reward/track_ang_vel_z_exp: 0.6985
+      Episode_Reward/ang_vel_xy_l2: -0.0262
+     Episode_Reward/dof_torques_l2: -0.0012
+         Episode_Reward/dof_acc_l2: -0.0219
+     Episode_Reward/action_rate_l2: -0.0195
+      Episode_Reward/feet_air_time: 0.0000
+Episode_Reward/flat_orientation_l2: -0.0063
+     Episode_Reward/dof_pos_limits: -0.0014
+Episode_Reward/termination_penalty: 0.0000
+         Episode_Reward/feet_slide: -0.0098
+Episode_Reward/joint_deviation_hip: -0.0631
+Metrics/base_velocity/error_vel_xy: 0.3334
+Metrics/base_velocity/error_vel_yaw: 0.5842
+      Episode_Termination/time_out: 0.9451
+  Episode_Termination/base_contact: 0.0549
+--------------------------------------------------------------------------------
+                   Total timesteps: 56696832
+                    Iteration time: 0.60s
+                      Time elapsed: 00:23:32
+                               ETA: 00:07:04
+    PID     ELAPSED COMMAND
+  35496       24:12 /bin/bash /isaac-sim/python.sh train.py --task Tinker-Flat-v0 --num_envs 1024 --max_iterations 3000 --seed 42 --run_name baseline_seed42 --headless
+34 %, 3223 MiB
+/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_flat_baseline/2026-11-01_11-20-40_baseline_seed42/model_2200.pt
+/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_flat_baseline/2026-11-01_11-20-40_baseline_seed42/model_2300.pt

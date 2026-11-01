@@ -1,0 +1,50 @@
+|=============================================================================================|
+| OS: 24.04.4 LTS (Noble Numbat) ubuntu, Version: 24.04.4, Kernel: 5.15.0-191-generic
+| XServer Vendor: The X.Org Foundation, XServer Version: 12101011 (1.21.1.11)
+| Processor: Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz
+| Bare Metal Cores: 64 | Bare Metal Logical Cores: 128
+| Core Usage Quota: 14
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 122880 | Free Memory: 114101
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-01T05:38:06Z [5,008ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-11-01T05:38:06Z [5,046ms] [Warning] [omni.kvdb.plugin] Disabling key-value database because another kit process is locking it
+                      Time elapsed: 00:08:35
+                               ETA: 01:20:52
+
+################################################################################
+                     [1m Learning iteration 480/5000 [0m                      
+
+                       Computation: 18883 steps/s (collection: 1.206s, learning 0.096s)
+             Mean action noise std: 0.25
+          Mean value_function loss: 0.1945
+               Mean surrogate loss: -0.0037
+                 Mean entropy loss: -2.3657
+                       Mean reward: 46.65
+               Mean episode length: 796.67
+Episode_Reward/track_lin_vel_xy_exp: 1.9427
+Episode_Reward/track_ang_vel_z_exp: 1.4474
+      Episode_Reward/ang_vel_xy_l2: -0.0254
+     Episode_Reward/dof_torques_l2: -0.0004
+         Episode_Reward/dof_acc_l2: -0.0534
+     Episode_Reward/action_rate_l2: -0.0116
+      Episode_Reward/feet_air_time: 0.0000
+Episode_Reward/flat_orientation_l2: -0.0528
+     Episode_Reward/dof_pos_limits: -0.0000
+Episode_Reward/termination_penalty: -0.0153
+         Episode_Reward/feet_slide: -0.0392
+Episode_Reward/joint_deviation_hip: -0.0595
+       Episode_Reward/gait_contact: 0.2606
+     Episode_Reward/gait_reference: 0.2519
+      Episode_Reward/stuck_contact: -1.1747
+          Episode_Reward/yaw_error: -0.2696
+Metrics/base_velocity/error_vel_xy: 0.2602
+Metrics/base_velocity/error_vel_yaw: 0.3589
+      Episode_Termination/time_out: 0.6401
+  Episode_Termination/base_contact: 0.3599
+--------------------------------------------------------------------------------
+                   Total timesteps: 11821056
+                    Iteration time: 1.30s
+                      Time elapsed: 00:08:36
+                               ETA: 01:20:53

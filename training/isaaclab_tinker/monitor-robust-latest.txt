@@ -1,0 +1,68 @@
+Traceback (most recent call last):
+  File "/root/gpufree-data/tinker-deployment/isaaclab_tinker/mujoco_evaluate.py", line 83, in <module>
+    result={'checkpoint':a.checkpoint,'model_source':'same URDF as Isaac Lab','scope':'preliminary; full acceptance matrix not implemented','cases':[rollout(base,a.checkpoint,c,123,a.seconds,a.delay_ms,a.drop) for c in cases]}
+                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/gpufree-data/tinker-deployment/isaaclab_tinker/mujoco_evaluate.py", line 83, in <listcomp>
+    result={'checkpoint':a.checkpoint,'model_source':'same URDF as Isaac Lab','scope':'preliminary; full acceptance matrix not implemented','cases':[rollout(base,a.checkpoint,c,123,a.seconds,a.delay_ms,a.drop) for c in cases]}
+                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/gpufree-data/tinker-deployment/isaaclab_tinker/mujoco_evaluate.py", line 48, in rollout
+    rng=np.random.default_rng(seed);m=build_model(base);d=mujoco.MjData(m)
+                                      ^^^^^^^^^^^^^^^^^
+  File "/root/gpufree-data/tinker-deployment/isaaclab_tinker/mujoco_evaluate.py", line 31, in build_model
+    return mujoco.MjModel.from_xml_path(str(target))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Error: more than 6 dofs in body 'L0_Link'
+Element name 'L0_Link', id 1, line 21
+<mujoco model="TinkerV2_URDF">
+  <compiler angle="radian" meshdir="/root/gpufree-data/tinker-deployment/isaaclab_tinker/assets/meshes" />
+
+  <asset>
+    <mesh name="base_link" content_type="model/stl" file="base_link.STL" />
+    <mesh name="L0_Link" content_type="model/stl" file="L0_Link.STL" />
+    <mesh name="L1_Link" content_type="model/stl" file="L1_Link.STL" />
+    <mesh name="L2_Link" content_type="model/stl" file="L2_Link.STL" />
+    <mesh name="L3_Link" content_type="model/stl" file="L3_Link.STL" />
+    <mesh name="L4_Link_ankle" content_type="model/stl" file="L4_Link_ankle.STL" />
+    <mesh name="R0_Link" content_type="model/stl" file="R0_Link.STL" />
+    <mesh name="R1_Link" content_type="model/stl" file="R1_Link.STL" />
+    <mesh name="R2_Link" content_type="model/stl" file="R2_Link.STL" />
+    <mesh name="R3_Link" content_type="model/stl" file="R3_Link.STL" />
+    <mesh name="R4_Link_ankle" content_type="model/stl" file="R4_Link_ankle.STL" />
+                   Total timesteps: 16392192
+                    Iteration time: 0.91s
+                      Time elapsed: 00:10:54
+                               ETA: 01:10:55
+
+################################################################################
+                     [1m Learning iteration 667/5000 [0m                      
+
+                       Computation: 26734 steps/s (collection: 0.829s, learning 0.090s)
+             Mean action noise std: 0.88
+          Mean value_function loss: 0.2573
+               Mean surrogate loss: -0.0075
+                 Mean entropy loss: 12.1262
+                       Mean reward: 64.43
+               Mean episode length: 859.58
+Episode_Reward/track_lin_vel_xy_exp: 3.1920
+Episode_Reward/track_ang_vel_z_exp: 0.1377
+      Episode_Reward/ang_vel_xy_l2: -0.1769
+     Episode_Reward/dof_torques_l2: -0.0026
+         Episode_Reward/dof_acc_l2: -0.3628
+     Episode_Reward/action_rate_l2: -0.1626
+      Episode_Reward/feet_air_time: 0.0003
+Episode_Reward/flat_orientation_l2: -0.0223
+     Episode_Reward/dof_pos_limits: -0.0001
+Episode_Reward/termination_penalty: -0.0042
+         Episode_Reward/feet_slide: -0.1170
+Episode_Reward/joint_deviation_hip: -0.0924
+       Episode_Reward/gait_contact: 0.8613
+     Episode_Reward/gait_reference: 0.3704
+Metrics/base_velocity/error_vel_xy: 0.1856
+Metrics/base_velocity/error_vel_yaw: 3.7067
+      Episode_Termination/time_out: 0.7121
+  Episode_Termination/base_contact: 0.2879
+--------------------------------------------------------------------------------
+                   Total timesteps: 16416768
+                    Iteration time: 0.92s
+                      Time elapsed: 00:10:55
+                               ETA: 01:10:54

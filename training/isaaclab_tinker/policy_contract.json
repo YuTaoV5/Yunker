@@ -1,0 +1,72 @@
+{
+  "status": "baseline_under_training_not_for_hardware",
+  "control_hz": 50,
+  "physics_hz": 200,
+  "joint_order": [
+    "J_L0",
+    "J_L1",
+    "J_L2",
+    "J_L3",
+    "J_L4_ankle",
+    "J_R0",
+    "J_R1",
+    "J_R2",
+    "J_R3",
+    "J_R4_ankle"
+  ],
+  "default_angles": [
+    0,
+    0.08,
+    0.56,
+    -1.12,
+    -0.57,
+    0,
+    -0.08,
+    -0.56,
+    1.12,
+    0.57
+  ],
+  "kp": [
+    15,
+    17,
+    17,
+    17,
+    15,
+    15,
+    17,
+    17,
+    17,
+    15
+  ],
+  "kd": [
+    0.5,
+    1.5,
+    1.5,
+    1.5,
+    0.5,
+    0.5,
+    1.5,
+    1.5,
+    1.5,
+    0.5
+  ],
+  "action_scale": 0.25,
+  "actor_observation_dimension": 195,
+  "history_frames": 5,
+  "observation_terms": [
+    "body_angular_velocity_scaled_0.25",
+    "body_projected_gravity",
+    "velocity_commands",
+    "joint_position_minus_default",
+    "joint_velocity_scaled_0.05",
+    "previous_raw_action"
+  ],
+  "history_layout": "Isaac Lab per-term history flattening; verify exported deployment adapter before use",
+  "notes": [
+    "Different contract from existing 660-dimensional finall.onnx. Do not replace the file on robot.",
+    "Actuator effort caps follow upstream URDF (12/20 Nm); physical limits not yet measured.",
+    "Original inertial model retained; actual robot mass and COM changes not identified.",
+    "Baseline has friction and observation noise only; delay, mass/COM randomization and push evaluation still required.",
+    "Self-collision disabled in baseline; needs assessment before final acceptance."
+  ]
+}

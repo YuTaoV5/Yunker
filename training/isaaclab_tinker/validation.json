@@ -1,0 +1,21 @@
+{
+  "zero_action_5s_terminations": 0,
+  "height_min": 0.2889059782028198,
+  "height_max": 0.32754743099212646,
+  "joint_names": [
+    "J_L0",
+    "J_R0",
+    "J_L1",
+    "J_R1",
+    "J_L2",
+    "J_R2",
+    "J_L3",
+    "J_R3",
+    "J_L4_ankle",
+    "J_R4_ankle"
+  ],
+  "policy_shape": [
+    8,
+    195
+  ]
+}

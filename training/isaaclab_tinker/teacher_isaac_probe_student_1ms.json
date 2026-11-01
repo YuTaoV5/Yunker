@@ -1,0 +1,96 @@
+{
+  "teacher_sha256": "9da84f4596ed2c3428d78f3c9f7cb5a61036fe0060b5d49ec11356fdd91d0808",
+  "physics_dt": 0.001,
+  "control_dt": 0.02,
+  "seconds": 20.0,
+  "robots_per_case": 4,
+  "postprocessing": "0.1 previous raw + 0.9 raw, joint limits; no swing_smooth",
+  "scope": "diagnostic, no faults, seed701; not full acceptance",
+  "cases": {
+    "stand": {
+      "command": [
+        0,
+        0,
+        0
+      ],
+      "xy_rmse": 0.14929863966685566,
+      "yaw_rmse": 0.4979836664108653,
+      "no_base_contact_termination_fraction": 1.0,
+      "mean_liftoffs": [
+        63.5,
+        62.75
+      ]
+    },
+    "forward_010": {
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "xy_rmse": 0.13710043760418075,
+      "yaw_rmse": 0.2238754002950971,
+      "no_base_contact_termination_fraction": 1.0,
+      "mean_liftoffs": [
+        56.5,
+        56.75
+      ]
+    },
+    "forward_025": {
+      "command": [
+        0.25,
+        0,
+        0
+      ],
+      "xy_rmse": 0.14384513807363428,
+      "yaw_rmse": 0.21292246201475393,
+      "no_base_contact_termination_fraction": 0.75,
+      "mean_liftoffs": [
+        50.75,
+        50.25
+      ]
+    },
+    "backward": {
+      "command": [
+        -0.1,
+        0,
+        0
+      ],
+      "xy_rmse": 0.3210405758459128,
+      "yaw_rmse": 0.3321036238081042,
+      "no_base_contact_termination_fraction": 0.0,
+      "mean_liftoffs": [
+        53.5,
+        56.5
+      ]
+    },
+    "turn_left": {
+      "command": [
+        0,
+        0,
+        0.3
+      ],
+      "xy_rmse": 0.13621881491805365,
+      "yaw_rmse": 0.3911598565962951,
+      "no_base_contact_termination_fraction": 1.0,
+      "mean_liftoffs": [
+        68.25,
+        38.75
+      ]
+    },
+    "turn_right": {
+      "command": [
+        0,
+        0,
+        -0.3
+      ],
+      "xy_rmse": 0.1565192680639811,
+      "yaw_rmse": 0.267707119912444,
+      "no_base_contact_termination_fraction": 1.0,
+      "mean_liftoffs": [
+        60.0,
+        60.0
+      ]
+    }
+  },
+  "controller": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/cloned_actor.pt"
+}

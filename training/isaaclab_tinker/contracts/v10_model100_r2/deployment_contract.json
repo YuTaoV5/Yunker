@@ -1,0 +1,221 @@
+{
+  "contract_id": "tinker-v10-direct195-bootstrap2-command2-model100",
+  "status": "candidate_NOT_ACCEPTED",
+  "accepted_for_robot": false,
+  "policy": {
+    "checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v10/2026-11-01_16-51-54_dagger_init_control_seed49/model_100.pt",
+    "checkpoint_sha256": "c6c13f50faaf481a5c363b4a580d54730ce392be27ffd1bf0cc81e06409f8b04",
+    "onnx_sha256": "505319a64928ac54706fc7b500bca862f2a8824b913c56039a4e0533f6827026",
+    "obs_dimension": 195,
+    "contract_version": 10
+  },
+  "frame": "URDF body frame; gravity is unit world-down expressed in body frame; quaternion convention WXYZ",
+  "observation": {
+    "dtype": "float32",
+    "history_samples": 5,
+    "history_order": "oldest first within each term; concatenate term histories",
+    "startup": "repeat first actual sample after reset; previous neural action starts zero",
+    "terms": [
+      {
+        "name": "gyro_body",
+        "width": 3,
+        "scale": 0.25,
+        "columns": [
+          0,
+          15
+        ]
+      },
+      {
+        "name": "projected_gravity_body",
+        "width": 3,
+        "scale": 1.0,
+        "columns": [
+          15,
+          30
+        ]
+      },
+      {
+        "name": "command_vx_vy_yawrate_body",
+        "width": 3,
+        "scale": 1.0,
+        "columns": [
+          30,
+          45
+        ]
+      },
+      {
+        "name": "joint_position_minus_default",
+        "width": 10,
+        "scale": 1.0,
+        "columns": [
+          45,
+          95
+        ]
+      },
+      {
+        "name": "joint_velocity",
+        "width": 10,
+        "scale": 0.05,
+        "columns": [
+          95,
+          145
+        ]
+      },
+      {
+        "name": "previous_neural_raw_action",
+        "width": 10,
+        "scale": 1.0,
+        "columns": [
+          145,
+          195
+        ]
+      }
+    ]
+  },
+  "action": {
+    "joint_order": [
+      "J_L0",
+      "J_L1",
+      "J_L2",
+      "J_L3",
+      "J_L4_ankle",
+      "J_R0",
+      "J_R1",
+      "J_R2",
+      "J_R3",
+      "J_R4_ankle"
+    ],
+    "default_angles_rad": [
+      0.0,
+      0.08,
+      0.56,
+      -1.12,
+      -0.57,
+      0.0,
+      -0.08,
+      -0.56,
+      1.12,
+      0.57
+    ],
+    "mapping": "target=clip(default+.25*neural_action,physical_position_bounds)",
+    "lower_rad": [
+      -0.7,
+      -0.38,
+      -1.57,
+      -2.35,
+      -1.2,
+      -0.7,
+      -0.38,
+      -1.57,
+      0.0,
+      -1.2
+    ],
+    "upper_rad": [
+      0.7,
+      0.46,
+      1.57,
+      0.0,
+      1.2,
+      0.7,
+      0.47,
+      1.57,
+      2.35,
+      1.2
+    ],
+    "smoothing": null,
+    "reference_gait": null,
+    "policy_hz": 50
+  },
+  "actuator": {
+    "kp": [
+      15,
+      17,
+      17,
+      17,
+      15,
+      15,
+      17,
+      17,
+      17,
+      15
+    ],
+    "kd": [
+      0.5,
+      1.5,
+      1.5,
+      1.5,
+      0.5,
+      0.5,
+      1.5,
+      1.5,
+      1.5,
+      0.5
+    ],
+    "effort_limit_Nm": [
+      12.0,
+      20.0,
+      20.0,
+      20.0,
+      12.0,
+      12.0,
+      20.0,
+      20.0,
+      20.0,
+      12.0
+    ],
+    "physics_dt_seconds": 0.001,
+    "calibration_zero_is_separate_from_default_stance": true
+  },
+  "command_timing": {
+    "revision": 2,
+    "schedule_source_sha256": "1ae851b4d3fab6404a947f013512e85d596a2edf16401396fead3590ab066fd1",
+    "policy_input_latest_command_columns": [
+      42,
+      45
+    ]
+  },
+  "physics": {
+    "source_urdf_sha256": "f74e1ccb78b32a90680414d83f04ede574f25c1771286eeba3f30f6b8a962ac1",
+    "total_mass_kg": 8.4175075,
+    "mujoco_backend_revision": "mujoco_urdf_v2_visual_masks_preserved",
+    "self_collision": false,
+    "ground": "original flat plane; diagnostic kinematic box is a separately labeled condition",
+    "friction_model_equivalence": "not yet fully verified"
+  },
+  "numerical_export_verification": {
+    "pass": true,
+    "max_abs_error": 1.7285346984863281e-06,
+    "threshold": 1e-05
+  },
+  "acceptance": {
+    "file": "acceptance.json",
+    "sha256": "dd02ed142ae59c1aaff627474cf7ec1c94f07e7c7f82d487af31e4008effa82b",
+    "status": "NOT_PASSED",
+    "note": "Model100 gait and boundary tests failed; numerical parity is not gait acceptance"
+  },
+  "provenance": {
+    "source_files_pinned_for_future_replay": {
+      "task.py": "e469c3076e63911b1eadbb08e05c198231a6c12b34249bfe4bd75acdda8311bd",
+      "robust_task.py": "1b4bf84c980e9eb036844085cb924fbe95538080d52fc0ebd341f6bc66a87b69",
+      "iteration3.py": "1d3a886d0ede7b64778df82c788dc0a75e90350baa868adba4430cc745e4fb09",
+      "iteration4.py": "f8b59a9341f678a04d10038073a984c345237fcfb51a40b6522f8cd26260947d",
+      "iteration7.py": "e0996664fe4a5f0e54798e53ca33413cef3edfdff05b83161b00013c0d1bc451",
+      "iteration8.py": "c151a024bc0b800525ef1ccdb2624f229ed4d4ae8da7453a4f6259b444a01553",
+      "iteration9.py": "7dac0a83cbec3cf96b6a590049fc602c673089af3bd2301cde807c110e3bb92e",
+      "iteration10.py": "df7d99f904ead7618cc56c1f0b9ab539b20981f1189383d61006b86f1786357e",
+      "anchored_ppo.py": "71c610f027937dcfe69d134a782e8a664af80f77ab6980efbeab60f6d435b5f8",
+      "evaluate.py": "ab11d4731f5d5549657634f7b66de320659030423182b239aebe4e7ac9f7beb0",
+      "mujoco_evaluate.py": "9ff97fbf8cbd9bf5c2462cf65ce67d4ce87b235ed27de8b75ab4f2ebda12f489",
+      "mujoco_contact_metrics.py": "696aa162c9cd080d47009fda59df7fb05c0808b2e376b1a8c53bfdc8b4a50503",
+      "command_schedule.py": "1ae851b4d3fab6404a947f013512e85d596a2edf16401396fead3590ab066fd1",
+      "torch_packet_channel.py": "f70a4fa4738ebdd15e193b275de6e08d1804709a4dad5abdf60813a6b65c25e8",
+      "isaac_fault_profile.py": "daf5d4be63f8f730e99e64b42ed30156ccabc356632484b33931827c0449a25b",
+      "isaac_safety_audit.py": "4cb1bbf20191033d237dc36b5e4ad1948dacb583df7c85eabaa01330e0d6116d",
+      "torch_foot_geometry.py": "44394369db94795ff71b6ffdb61c87735109cf706b741043aead3c5c6832006f",
+      "foot_collision_support.json": "de4ead8183d33b02e2c45356aa5abc55963918d04ed2fc1a73b97121fc86b703",
+      "export_verify.py": "f7aa1e808bf0ac3c95a89ab75942bc77f8d69b62bb055b3eb9c06ba9266bcd2e"
+    },
+    "note": "Pinned at contract assembly; earlier evaluations retain their recorded backend/bootstrap revisions"
+  },
+  "contract_payload_sha256": "b42de7614f58d3313f6ea981728a37da352a5ee9f811156cc459e9d75b81399e"
+}

@@ -1,0 +1,108 @@
+{
+  "checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v4/2026-11-01_13-50-55_reference_residual_seed45/model_300.pt",
+  "seed": 123,
+  "seconds": 20,
+  "warmup_seconds": 2,
+  "robots_per_case": 12,
+  "cases": {
+    "stand": {
+      "command": [
+        0,
+        0,
+        0
+      ],
+      "xy_rmse": 0.01837223395705223,
+      "yaw_rmse": 0.05586029216647148,
+      "episode_ends_in_measurement": 12,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 12,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.29382064938545227,
+      "mean_gravity_xy_norm": 0.08076397329568863
+    },
+    "forward_010": {
+      "command": [
+        0.1,
+        0,
+        0
+      ],
+      "xy_rmse": 0.12930119037628174,
+      "yaw_rmse": 0.05292315036058426,
+      "episode_ends_in_measurement": 12,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 12,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.2790060043334961,
+      "mean_gravity_xy_norm": 0.15790912508964539
+    },
+    "forward_025": {
+      "command": [
+        0.25,
+        0,
+        0
+      ],
+      "xy_rmse": 0.27452269196510315,
+      "yaw_rmse": 0.06638769805431366,
+      "episode_ends_in_measurement": 12,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 12,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.27701178193092346,
+      "mean_gravity_xy_norm": 0.18950429558753967
+    },
+    "backward": {
+      "command": [
+        -0.1,
+        0,
+        0
+      ],
+      "xy_rmse": 0.1454109102487564,
+      "yaw_rmse": 0.08796266466379166,
+      "episode_ends_in_measurement": 12,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 12,
+      "fraction_any_foot_unloaded": 9.259259968530387e-05,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.28127196431159973,
+      "mean_gravity_xy_norm": 0.12423620373010635
+    },
+    "turn_left": {
+      "command": [
+        0,
+        0,
+        0.3
+      ],
+      "xy_rmse": 0.09535160660743713,
+      "yaw_rmse": 0.2738160789012909,
+      "episode_ends_in_measurement": 12,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 12,
+      "fraction_any_foot_unloaded": 0.0,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.2733239531517029,
+      "mean_gravity_xy_norm": 0.20594196021556854
+    },
+    "turn_right": {
+      "command": [
+        0,
+        0,
+        -0.3
+      ],
+      "xy_rmse": 0.12199100106954575,
+      "yaw_rmse": 0.29352301359176636,
+      "episode_ends_in_measurement": 12,
+      "non_timeout_terminations": 0,
+      "normal_timeouts": 12,
+      "fraction_any_foot_unloaded": 0.0008333333535119891,
+      "fraction_both_feet_unloaded": 0.0,
+      "mean_base_height": 0.27843430638313293,
+      "mean_gravity_xy_norm": 0.15605705976486206
+    }
+  },
+  "task": "Tinker-Robust-v4",
+  "training_fault_model_active": false,
+  "fault_curriculum_override": 0.0
+}

@@ -1,0 +1,70 @@
+{
+  "checkpoint": "/root/gpufree-data/tinker-deployment/isaaclab_tinker/logs/rsl_rl/tinker_robust_v2/2026-11-01_12-47-58_gait_faults_seed43/model_1800.pt",
+  "isaac_to_reconstructed_torch_max_abs_error": 9.5367431640625e-07,
+  "onnx_sample_max_abs_error": 1.9073486328125e-06,
+  "onnx_100_random_max_abs_error": 9.5367431640625e-06,
+  "threshold": 1e-05,
+  "pass": true,
+  "joint_order": [
+    "J_L0",
+    "J_L1",
+    "J_L2",
+    "J_L3",
+    "J_L4_ankle",
+    "J_R0",
+    "J_R1",
+    "J_R2",
+    "J_R3",
+    "J_R4_ankle"
+  ],
+  "default_angles": [
+    0.0,
+    0.08,
+    0.56,
+    -1.12,
+    -0.57,
+    0.0,
+    -0.08,
+    -0.56,
+    1.12,
+    0.57
+  ],
+  "kp": [
+    15,
+    17,
+    17,
+    17,
+    15,
+    15,
+    17,
+    17,
+    17,
+    15
+  ],
+  "kd": [
+    0.5,
+    1.5,
+    1.5,
+    1.5,
+    0.5,
+    0.5,
+    1.5,
+    1.5,
+    1.5,
+    0.5
+  ],
+  "control_hz": 50,
+  "action_scale": 0.25,
+  "obs_dimension": 205,
+  "observation_terms": [
+    "base_ang_vel",
+    "projected_gravity",
+    "velocity_commands",
+    "joint_pos",
+    "joint_vel",
+    "actions",
+    "gait_phase"
+  ],
+  "history": "5 samples per term, chronological, oldest first; term histories concatenated",
+  "status": "export consistency only; not locomotion acceptance"
+}

@@ -1,0 +1,18 @@
+{
+  "task": "Tinker-Robust-v8",
+  "iteration": 34,
+  "total_iterations": 3000,
+  "checked_at": "2026-11-01T07:53:28.505432+00:00",
+  "previous_run_final_iteration": 353,
+  "previous_run_increment": 78,
+  "status": "running_startup",
+  "acceptance": "NOT_PASSED",
+  "reward": 38.56,
+  "episode_length": 676.32,
+  "xy_error": 0.1868,
+  "yaw_error": 0.415,
+  "base_contact": 0.2897,
+  "single_support_reward": 0.2796,
+  "anchor_mse": 0.001,
+  "eta": "02:20:22"
+}
